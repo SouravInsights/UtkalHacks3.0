@@ -114,6 +114,10 @@
   height: 1em;
 }
 
+.bgimage {
+  background: url("/bgimage.jpeg");
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
