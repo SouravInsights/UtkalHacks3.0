@@ -2,14 +2,14 @@ import { Flex, Box, Text, Heading, Button } from "@chakra-ui/react"
 
 const Wikisection = () => {
   return (
-    <Flex direction="column" zIndex="1" mx="10px" my="40px">
+    <Flex direction="column" my="20px">
       <Box align="center">
         <Heading size="2xl" fontFamily="Rubik">
           Our Wiki
         </Heading>
         <Text
           fontStyle="Rubik"
-          fontSize={["lg", "lg", "xl", "xl"]}
+          fontSize={["lg", "lg", "xl", "3xl"]}
           fontWeight="normal"
           textAlign="left"
         >

@@ -2,19 +2,10 @@ import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
 import NavBar from "../component/Navbar.js/Header.js"
-import {
-  Flex,
-  Box,
-  Image,
-  Text,
-  StylesProvider,
-  Heading,
-  Grid,
-} from "@chakra-ui/react"
+import { Flex, Box, Image, Heading, Grid } from "@chakra-ui/react"
 import HeroSection from "../component/Herosection/Herosection.js"
-import Wikisection from "../component/WikiSection/index.js"
+import Wikisection from "../component/Wiki"
 import FAQ from "../component/FAQ.js"
-import Sponsor from "../component/Sponsor.js"
 import About from "../component/Herosection/about.js"
 
 export async function getStaticProps() {
@@ -54,7 +45,10 @@ export default function Home({ sponsors }) {
       </Head>
       <NavBar />
       <HeroSection />
-      <Box px={["30px", "30px", "80px", "120px"]}>
+      <Box
+        justifyContent="space-between"
+        px={["30px", "30px", "80px", "120px"]}
+      >
         <About />
         <Wikisection />
         <Heading size="2xl" textAlign="center" m="30px">
@@ -62,11 +56,7 @@ export default function Home({ sponsors }) {
         </Heading>
         <Grid templateColumns="repeat(3, 1fr)" gap={10} px="30px">
           {sponsors.map((sponsor) => (
-            <Box
-              w={["100%", "100%", "90%", "80%"]}
-              justifyContent="space-between"
-              bg="#454565"
-            >
+            <Box maxW={["100%", "100%", "90%", "80%"]}>
               <Image src={sponsor.company.logo.url} />
             </Box>
           ))}
