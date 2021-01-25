@@ -1,12 +1,13 @@
 import React from "react"
-import { Box, Heading, Image } from "@chakra-ui/react"
+import { Box, Heading, Image, Grid, SimpleGrid } from "@chakra-ui/react"
 
 const Sponsor = ({ logo, name }) => {
   return (
-    <Box w="100%" p="5px">
-      <Heading>{name}</Heading>
-      <Image src={logo} />
-    </Box>
+    <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+      <Box w="100%" h="10" /* p="5px" */>
+        <Image src={logo} />
+      </Box>
+    </Grid>
   )
 }
 

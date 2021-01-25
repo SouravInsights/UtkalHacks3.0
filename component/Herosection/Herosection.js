@@ -18,23 +18,20 @@ const HeroSection = () => {
     >
       {/* <Image src="/bgimage.jpeg" /> */}
       <Flex direction="column">
-        <Box ml="130px" zIndex="1" my="170px">
-          <Text fontSize="5xl" color="#ffffff" fontWeight="bold">
+        <Box ml="150px" zIndex="1" my="170px">
+          <Text fontSize={["xl", "5xl"]} color="#ffffff" fontWeight="bold">
             Hack From Home
           </Text>
         </Box>
-        <Box zIndex="1" my="150px" Align="right" mx="100px">
+        <Box zIndex="1" my="150px" Align="center">
           <Text fontSize="xl" color="#ffffff" fontWeight="noraml" pr="10px">
             20th Feb - 7th March
           </Text>
           <Button
             size="lg"
-            borderRadius="10px"
             color="#ffffff"
             _hover={{ bg: "blue" }}
             _active={{ borderColor: "" }}
-            my="20px"
-            boxShadow="2xl"
             backgroundColor="#3182ce"
           >
             Apply with Devfolio

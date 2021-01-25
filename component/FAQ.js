@@ -19,7 +19,7 @@ const Faqdata = [
   },
   {
     id: 2,
-    question: "How does the registration process work?",
+    question: "How the registration process works?",
     answer:
       "Unlike all other hackathons, our registration process will be slightly different. But the entire process is very simple, just go to top and hit that Apply With Devfolio button. That's it. Then you will be prompted to make a quick submission of the questionnaires within the Devfolio platform.",
     /*  - What is the pain or problem that you're trying to solve?
@@ -32,7 +32,7 @@ const Faqdata = [
   },
   {
     id: 3,
-    question: "What will happen during the Sprint Day?",
+    question: "What happen during the Sprint Day?",
     answer:
       "SprintDay is the first day of the hackathon where teams will collaborate with UI / UX Designers and will begin working on their ideas on site. SprintDay is all about working on the problem statement, brainstorming and prototyping before jumping into solving the problem. We will invite some expert mentors who will conduct a Design Sprint that will help you to understand the problems first, develop your idea and the prototype. Most of the of SprintDay is about understanding the problem and developing prototypes, so please remember to bring your laptops and any other equipment and materials you might need to work. Food and beverages are provided throughout. ",
   },
@@ -82,20 +82,20 @@ const Faqdata = [
 
 const Faqitems = ({ question, answer }) => {
   return (
-    <Box border="blue.500" borderWidth="2px">
-      <Accordion allowToggle>
+    <Box borderWidth="2px">
+      <Accordion borderColor="#FFFF66" allowToggle>
         <AccordionItem>
           <AccordionButton
             border="5px"
-            _hover={{ bg: "blue.300" }}
+            _hover={{ bg: "#FFFF66" }}
             justifyContent="space-between"
           >
-            <Box fontSize="xl" textAlign="center">
+            <Box fontSize={["lg", "xl", "2xl", "2xl"]} textAlign="center">
               {question}
             </Box>
             <AccordionIcon />
           </AccordionButton>
-          <AccordionPanel pb={4} fontSize="lg">
+          <AccordionPanel pb={4} fontSize={["sm", "md", "lg", "xl"]}>
             {answer}
           </AccordionPanel>
         </AccordionItem>
@@ -106,7 +106,12 @@ const Faqitems = ({ question, answer }) => {
 
 const FAQ = () => {
   return (
-    <Flex direction="column" mx={["20px", "60px", "80px", "170px"]} my="50px">
+    <Flex
+      direction="column"
+      mx={["10px", "40px", "60px", "200px"]}
+      my="50px"
+      borderColor="burlywood"
+    >
       <Heading size="2xl" textAlign="center" m="30px">
         FAQ
       </Heading>

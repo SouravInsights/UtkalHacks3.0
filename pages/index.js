@@ -5,15 +5,17 @@ import NavBar from "../component/Navbar.js/Header.js"
 import {
   Flex,
   Box,
+  Image,
   Text,
   StylesProvider,
   Heading,
   Grid,
 } from "@chakra-ui/react"
-import HeroSection from "../component/Herosection/index.js"
+import HeroSection from "../component/Herosection/Herosection.js"
 import Wikisection from "../component/WikiSection/index.js"
 import FAQ from "../component/FAQ.js"
 import Sponsor from "../component/Sponsor.js"
+import About from "../component/Herosection/about.js"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -44,45 +46,33 @@ export async function getStaticProps() {
   }
 }
 
-const ConsoleLog = ({ children }) => {
-  return console.log(children)
-}
-
-export default function Home({ sponsors, tier }) {
+export default function Home({ sponsors }) {
   return (
     <>
       <Head>
         <title>UtkalHacks3.0</title>
       </Head>
       <NavBar />
-      <Flex
-        direction="column"
-        px={["30px", "30px", "80px", "120px"]}
-        justifyContent="space-between"
-      >
-        <HeroSection />
+      <HeroSection />
+      <Box px={["30px", "30px", "80px", "120px"]}>
+        <About />
         <Wikisection />
-        {sponsors
-          .filter((sponsors) => sponsors.tier === "Platinum")
-          .map((sponsor) => (
-            <>
-              <Heading
-                size="2xl"
-                fontWeight="bold"
-                color="black"
-                textAlign="center"
-              >
-                {sponsor.tier}
-              </Heading>
-
-              <Sponsor
-                /* name={sponsor.company.name} */
-                logo={sponsor.company.logo.url}
-              />
-            </>
+        <Heading size="2xl" textAlign="center" m="30px">
+          Our Past Sponsors
+        </Heading>
+        <Grid templateColumns="repeat(3, 1fr)" gap={10} px="30px">
+          {sponsors.map((sponsor) => (
+            <Box
+              w={["100%", "100%", "90%", "80%"]}
+              justifyContent="space-between"
+              bg="#454565"
+            >
+              <Image src={sponsor.company.logo.url} />
+            </Box>
           ))}
+        </Grid>
         <FAQ />
-      </Flex>
+      </Box>
     </>
   )
 }
