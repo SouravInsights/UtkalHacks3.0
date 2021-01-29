@@ -7,6 +7,7 @@ import HeroSection from "../component/Herosection/Herosection.js"
 import Wikisection from "../component/Wiki"
 import FAQ from "../component/FAQ.js"
 import About from "../component/Herosection/about.js"
+import Whysection from "../component/Whysection.js"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -50,10 +51,27 @@ export default function Home({ sponsors }) {
         px={["30px", "30px", "80px", "120px"]}
       >
         <About />
+        <Whysection
+          url="/learning-bg.png"
+          heading="Learn something new!"
+          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+        />
+        <Whysection
+          reverse="true"
+          url="/learning-bg.png"
+          heading="Build nifty ideas!"
+          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+        />
+        <Whysection
+          url="/learning-bg.png"
+          heading="Meet smart people!"
+          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+        />
         <Wikisection />
         <Heading size="2xl" textAlign="center" m="30px">
           Our Past Sponsors
         </Heading>
+        {/* Sponsor section starts */}
         <Grid templateColumns="repeat(3, 1fr)" gap={10} px="30px">
           {sponsors.map((sponsor) => (
             <Box maxW={["100%", "100%", "90%", "80%"]}>
@@ -61,6 +79,7 @@ export default function Home({ sponsors }) {
             </Box>
           ))}
         </Grid>
+        {/* Sponsor section ends */}
         <FAQ />
       </Box>
     </>

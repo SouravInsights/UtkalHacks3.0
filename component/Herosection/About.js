@@ -26,10 +26,12 @@ const Aboutstory = ({ heading, text, url }) => {
 const About = () => {
   return (
     <Box my="80px">
+      {/* Why online hackthon is better? section starts here */}
       <Aboutstory
         heading="<Hack From Home/>"
         text="From broken coffee machines to the monotony of sitting for long hours at a stretch, this paradigm shift to online hackathons rids you of many such hiccups that you normally face in an offline experience. Going virtual empowers you to create revolutionary hacks at the comfort of your sofa!"
       />
+
       <SimpleGrid columns={3} gap="80px">
         <Box>
           <Image src="/card.png" />
@@ -41,7 +43,9 @@ const About = () => {
           <Image src="/card.png" />
         </Box>
       </SimpleGrid>
+      {/* Design-sprint section starts here */}
       <Grid
+        display={{ sm: "flex", md: "grid" }}
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(6, 1fr)"
         gap={10}
@@ -51,8 +55,10 @@ const About = () => {
           <Image src="/DSP1.jpg" />
         </GridItem>
         <GridItem colSpan={4} alignContent="center" justifyContent="center">
-          <Heading>Design Sprint to the Rescue!</Heading>
-          <Text>
+          <Heading fontSize={["md", "md", "lg", "50px"]}>
+            Design Sprint to the Rescue!
+          </Heading>
+          <Text fontSize={["sm", "lg", "md", "xl"]}>
             Hackathons are great, until they are not! With unguided, unclear
             direction, hackathons can be bloated with vaporware. When we don’t
             know the problem that we’re trying to solve, we might just build
