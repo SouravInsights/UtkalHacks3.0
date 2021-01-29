@@ -13,10 +13,23 @@ import {
 const Aboutstory = ({ heading, text, url }) => {
   return (
     <Flex direction="column">
-      <Heading size="3xl" fontFamily="rubik">
+      <Heading
+        fontFamily="Rubik"
+        fontWeight="black"
+        fontSize="42px"
+        lineHeight="3.125em"
+        letterSpacing="wider"
+        color="#252222"
+      >
         {heading}
       </Heading>
-      <Text fontFamily="rubik" fontSize="3xl" fontWeight="normal">
+      <Text
+        fontFamily="Rubik"
+        fontWeight="normal"
+        fontSize="2xl"
+        lineHeight="taller"
+
+      >
         {text}
       </Text>
     </Flex>
@@ -48,7 +61,7 @@ const About = () => {
         my="20px"
       >
         <GridItem rowSpan={1} colSpan={2}>
-          <Image src="/DSP1.jpg" />
+          <Image src="images/DSP1.jpg" />
         </GridItem>
         <GridItem colSpan={4} alignContent="center" justifyContent="center">
           <Heading>Design Sprint to the Rescue!</Heading>
@@ -60,16 +73,97 @@ const About = () => {
           </Text>
         </GridItem>
         <GridItem colSpan={2}>
-          <Image src="/DSP2.jpg" />
+          <Image src="images/DSP2.jpg" />
         </GridItem>
         <GridItem colSpan={2}>
-          <Image src="/DSP3.jpg" />
+          <Image src="images/DSP3.jpg" />
         </GridItem>
         <GridItem colSpan={2}>
-          <Image src="/DSP4.jpg" />
+          <Image src="images/DSP4.jpg" />
         </GridItem>
       </Grid>
+      <Box
+        justifyContent="center"
+        textAlign="center"
+        py="10px"
+      >
+        <Heading
+          fontFamily="Rubik"
+          fontStyle="normal"
+          fontWeight="black"
+          fontSize="220px"
+          lineHeight="261px"
+          color="#FE4A26"
+        >
+          15
+        </Heading>
+        <Text
+          fontFamily="Rubik Mono One"
+          fontStyle="normal"
+          fontWeight="normal"
+          fontSize="80px"
+          lineHeight="99px"
+          color="#252222"
+        >
+          DAYS
+        </Text>
+        <Text
+          fontFamily="Rubik Mono One"
+          fontStyle="normal"
+          fontWeight="normal"
+          fontSize="66px"
+          lineHeight="82px"
+          color="#252222"
+        >
+          OF...
+        </Text>
+        <Text
+          fontFamily="Rubik"
+          fontStyle="normal"
+          fontWeight="bold"
+          fontSize="30px"
+          lineHeight="36px"
+          letterSpacing="wider"
+          color="#252222"
+        >
+          DESIGNING / BUILDING / CODING / HACKING
+        </Text>
+        <Text
+          fontFamily="Rubik"
+          fontStyle="normal"
+          fontWeight="medium"
+          fontSize="26px"
+          lineHeight="31px"
+          letterSpacing="wider"
+          color="#252222"
+        >
+          NETWORKING / FRIENDS / MENTORS / CHALLENGES
+        </Text>
+        <Text
+          fontFamily="Rubik"
+          fontStyle="normal"
+          fontWeight="medium"
+          fontSize="20px"
+          lineHeight="24px"
+          letterSpacing="wider"
+          color="#252222"
+        >
+          TECH TALKS / WORKSHOPS / FUN ACTIVITIES/ SCHWAGS/ PRIZES
+        </Text>
+        <Text
+          fontFamily="Rubik"
+          fontStyle="normal"
+          fontWeight="medium"
+          fontSize="16px"
+          lineHeight="19px"
+          letterSpacing="wider"
+          color="#252222"
+        >
+          AND/ A / WHOLE/LOT/ MORE . . .
+        </Text>
+      </Box>
     </Box>
+
   )
 }
 

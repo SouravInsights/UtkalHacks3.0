@@ -19,12 +19,17 @@ const theme = extendTheme({
       body: {
         background: "#ffffff",
       },
+      /* 
+            fonts: {
+              body: "'Rubik', sans-serif",
+              heading: "'Rubik', sans-serif",
+              mono: "'Rubik', sans-serif",
+            }, */
     }),
   },
-  font: {
-    body: "Inter, sans-serif",
-    heading: "Segoe UI, Segoe UI Symbol",
-  },
+
+
+
   fontSizes: {
     xs: "12px",
     sm: "14px",
@@ -38,10 +43,15 @@ const theme = extendTheme({
     "6xl": "64px",
   },
   fontWeight: {
+    hairline: 100,
+    thin: 200,
+    light: 300,
     normal: 400,
     medium: 500,
+    semibold: 600,
     bold: 700,
-    extrabold: 900,
+    extrabold: 800,
+    black: 900,
   },
   lineHeight: {
     normal: "normal",
