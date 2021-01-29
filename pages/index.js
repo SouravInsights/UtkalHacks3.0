@@ -2,7 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
 import NavBar from "../component/Navbar.js/Header.js"
-import { Flex, Box, Image, Heading, Grid } from "@chakra-ui/react"
+import { Box, Image, Heading, Grid } from "@chakra-ui/react"
 import HeroSection from "../component/Herosection/Herosection.js"
 import Wikisection from "../component/Wiki"
 import FAQ from "../component/FAQ.js"
@@ -71,8 +71,12 @@ export default function Home({ sponsors }) {
         <Heading size="2xl" textAlign="center" m="30px">
           Our Past Sponsors
         </Heading>
-        {/* Sponsor section starts */}
-        <Grid templateColumns="repeat(3, 1fr)" gap={10} px="30px">
+        <Grid
+          alignItems="center"
+          placeItems="center"
+          templateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)"]}
+          gap={10}
+        >
           {sponsors.map((sponsor) => (
             <Box maxW={["100%", "100%", "90%", "80%"]}>
               <Image src={sponsor.company.logo.url} />
