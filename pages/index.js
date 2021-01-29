@@ -71,6 +71,7 @@ export default function Home({ sponsors }) {
         <Heading size="2xl" textAlign="center" m="30px">
           Our Past Sponsors
         </Heading>
+        {/* Sponsor section starts */}
         <Grid
           alignItems="center"
           placeItems="center"
