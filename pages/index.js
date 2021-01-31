@@ -14,6 +14,7 @@ import Description from "../component/Descriptionsection.js"
 import Prizesection from "../component/Prizesection.js"
 import Socialmedia from "../component/Socialmediasection.js"
 import Footer from "../component/Footer"
+import Badge from "../component/Badge/Badge"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -50,10 +51,10 @@ export default function Home({ sponsors }) {
       <Head>
         <title>UtkalHacks3.0</title>
       </Head>
+      <Badge />
       <NavBar />
       <HeroSection />
       <Box
-        justifyContent="space-between"
         px={["30px", "30px", "80px", "120px"]}
       >
         <About />
@@ -85,14 +86,14 @@ export default function Home({ sponsors }) {
         />
 
         <Prizesection />
-        <Wikisection />
-
+        {/*      <Wikisection />
+        */}
         <Heading
           fontFamily="Rubik"
-          size="2xl"
-          fontWeight="extrabold"
+          fontWeight="black"
+          fontSize={["2xl", "2xl", "4xl", "4xl"]}
+          color="#252222"
           textAlign="center"
-          mt="60px"
         >
           Our Past Sponsors
         </Heading>
@@ -102,7 +103,7 @@ export default function Home({ sponsors }) {
           placeItems="center"
           templateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)"]}
           gap={10}
-          mt="20px"
+          my="40px"
         >
           {sponsors.map((sponsor) => (
             <Box maxW={["100%", "100%", "90%", "80%"]}>
@@ -111,9 +112,9 @@ export default function Home({ sponsors }) {
           ))}
         </Grid>
         {/* Sponsor section ends */}
-        <FAQ />
-        <Socialmedia />
+        {/* <FAQ /> */}
       </Box>
+      <Socialmedia />
       <Footer />
     </>
   )

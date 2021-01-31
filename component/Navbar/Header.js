@@ -11,7 +11,7 @@ const NavBar = (props) => {
   return (
     <NavBarContainer {...props}>
       <Logo
-        w="100px"
+
         color={["white", "white", "primary.500", "primary.500"]}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
@@ -81,8 +81,9 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/how">Prizes </MenuItem>
-        <MenuItem to="/pricing">Team </MenuItem>
+        <MenuItem to="/schedule">Schedule </MenuItem>
+        <MenuItem to="/prizes">Prizes </MenuItem>
+        <MenuItem to="/challenges">Challenges </MenuItem>
       </Stack>
     </Box>
   )
@@ -100,13 +101,14 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       mx="auto"
-      w="90%"
-      px={8}
+      w="100%"
+      px={14}
       py={5}
-      backdropFilter="blur(10px)"
-      style={{
-        background: "linear-gradient(90.13deg, rgba(255, 255, 255, 0.5) 1.38%, rgba(199, 199, 190, 0.385417) 53.39%, rgba(255, 255, 255, 0) 99.28%)",
-      }}
+      bg="#ffffff"
+      /*       backdropFilter="blur(10px)"
+            style={{
+              background: "linear-gradient(90.13deg, rgba(255, 255, 255, 0.5) 1.38%, rgba(199, 199, 190, 0.385417) 53.39%, rgba(255, 255, 255, 0) 99.28%)",
+            }} */
       {...props}
     >
       { children}

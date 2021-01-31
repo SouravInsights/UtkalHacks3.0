@@ -59,9 +59,7 @@ const HeroSection = () => {
         >
           Apply with Devfolio
       </Button>
-
       </Box>
-
     </Box >
 
   )

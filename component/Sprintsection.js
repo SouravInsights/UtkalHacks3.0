@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Box, Text, Image, Grid, GridItem } from "@chakra-ui/react"
+import { Stack, Heading, Text, Image, Grid, GridItem } from "@chakra-ui/react"
 
 const Sprint = () => {
   return (
@@ -24,33 +24,35 @@ const Sprint = () => {
         alignContent="center"
         justifyContent="center"
       >
-        <Text
-          fontSize={["md", "md", "lg", "36px"]}
-          fontFamily="Rubik"
-          fontWeight="black"
-          letterSpacing="wide"
-        >
-          Design Sprint to the Rescue!
+        <Stack spacing="20px">
+          <Heading
+            fontFamily="Rubik"
+            fontWeight="black"
+            fontSize={["2xl", "2xl", "4xl", "4xl"]}
+            color="#252222"
+          >
+            Design Sprint to the Rescue!
+        </Heading>
+          <Text
+            as="p"
+            fontFamily="Rubik"
+            fontWeight="normal"
+            fontSize={["xl", "xl", "2xl", "2xl"]}
+            color="454954"
+          >
+            Hackathons are great, until they are not! With unguided, unclear
+            direction, hackathons can be bloated with vaporware. When we don’t
+            know the problem that we’re trying to solve, we might just build
+            something that no one never wanted.
         </Text>
-        <Text
-          fontSize={["sm", "lg", "md", "xl"]}
-          fontFamily="Rubik"
-          fontWeight="normal"
-          color="gray.600"
-        >
-          Hackathons are great, until they are not! With unguided, unclear
-          direction, hackathons can be bloated with vaporware. When we don’t
-          know the problem that we’re trying to solve, we might just build
-          something that no one never wanted.
-        </Text>
-        <Text
-          fontFamily="Rubik Mono One"
-          fontWeight="bold"
-          lineHeight="tall"
-          letterSpacing="wide"
-        >
-          "Build something people want!"
-        </Text>
+          <Heading
+            fontFamily="Rubik Mono One"
+            fontWeight="bold"
+            fontSize={["xl", "xl", "xl", "xl"]}
+          >
+            "Build something people want!"
+        </Heading>
+        </Stack>
       </GridItem>
 
       <GridItem colSpan={["1", "2", "2", "2"]} maxW="348px" maxH="232px">

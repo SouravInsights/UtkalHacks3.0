@@ -16,16 +16,19 @@ function Whysection({ heading, text, url, reverse }) {
         <Stack spacing={5} maxW={{ md: "xl" }}>
           <Heading
             fontFamily="Rubik"
-            fontSize={["2xl", "3xl", "3xl", "4xl"]}
-            fontWeight="extrabold"
+            fontWeight="black"
+            fontSize={["2xl", "2xl", "4xl", "4xl"]}
+            color="#252222"
           >
             {heading}
           </Heading>
           <Text
-            fontSize={["lg", "lg", "xl", "22px"]}
+            as="p"
+            fontFamily="Rubik"
             fontWeight="normal"
+            fontSize={["xl", "xl", "2xl", "2xl"]}
+            color="454954"
             textAlign="justify"
-            color="gray.600"
           >
             {text}
           </Text>

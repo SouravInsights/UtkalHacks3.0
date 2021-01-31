@@ -3,34 +3,32 @@ import {
   Heading,
   Box,
   Text,
-  Flex,
   Stack
 } from "@chakra-ui/react"
-
-import Description from '../Descriptionsection';
 import Aboutcard from '../Card/Aboutcard';
 
 
 const Aboutstory = ({ heading, text, url }) => {
   return (
-    <Flex direction="column">
+    <Stack spacing="20px" direction="column">
       <Heading
         fontFamily="Rubik"
         fontWeight="black"
-        fontSize="36px"
-        letterSpacing="wider"
+        fontSize={["2xl", "2xl", "4xl", "4xl"]}
         color="#252222"
       >
         {heading}
       </Heading>
       <Text
+        as="p"
         fontFamily="Rubik"
         fontWeight="normal"
         fontSize={["xl", "xl", "2xl", "2xl"]}
+        color="454954"
       >
         {text}
       </Text>
-    </Flex>
+    </Stack>
   )
 }
 
@@ -46,7 +44,7 @@ const About = () => {
 
       {/* Card section starts here */}
 
-      <Stack spacing="15px" mt="30px" direction={["column", "column", "row", "row"]} >
+      <Stack spacing="15px" mt="30px" direction={["column", "column", "row", "row"]} overflow="auto" >
         <Aboutcard
           coverImage="images/Card1.jpg"
           header="A better working environment"
@@ -65,11 +63,6 @@ const About = () => {
           body="No more chaotic working table. No more random snacks on the floor. Now you can just lock yourself in your room and get the work done! "
         />
       </Stack>
-
-      < Description />
-
-
-
     </Box>
 
   )

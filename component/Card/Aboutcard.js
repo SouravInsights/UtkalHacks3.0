@@ -1,13 +1,15 @@
 import React from "react"
-import { Image, Box } from "@chakra-ui/react"
-
+import { Image, Box, wRAP } from "@chakra-ui/react"
+import NextImage from "next/image";
 
 const AboutCard = ({ children, header, body, coverImage, ...props }) => {
 
 
     return (
-        <Box maxW="sm" borderWidth="1px" borderRadius="2px" bg="#E3F891" overflow="hidden">
+        <Box maxW="sm" borderWidth="1px" borderRadius="2px" bg="#E3F891">
+
             <Image w="100%" borderRadius="2px" src={coverImage} />
+
             <Box py="24px" px="20px" >
                 <Box
                     as="h1"
@@ -16,7 +18,7 @@ const AboutCard = ({ children, header, body, coverImage, ...props }) => {
                     fontWeight="bold"
                     lineHeight="auto"
                     fontSize={["xl", "xl", "2xl", "2xl"]}
-                    color="#000000"
+                    color="#252222"
                 >
                     {header}
                 </Box>

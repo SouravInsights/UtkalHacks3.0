@@ -6,6 +6,7 @@ const Socialmedia = () => {
   return (
     <Stack
       spacing={4}
+      w="100%"
       direction={{ base: "column", md: "row" }}
       bg="#7289DA"
       py={["30px", "30px", "40px", "50px"]}

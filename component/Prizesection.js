@@ -1,23 +1,24 @@
 import React from "react"
-import { Flex, Box, Text, Image, Button } from "@chakra-ui/react"
+import { Heading, Box, Text, Stack } from "@chakra-ui/react"
 
 const Prizesection = () => {
   return (
     <Box my="80px">
-      <Flex direction="column">
-        <Text
+      <Stack spacing="20px" direction="column">
+        <Heading
           fontFamily="Rubik"
-          fontSize="4xl"
-          fontWeight="extrabold"
-          letterSpacing="tight"
+          fontWeight="black"
+          fontSize={["2xl", "2xl", "4xl", "4xl"]}
+          color="#252222"
         >
-          Did we forget about prizes?
-        </Text>
+          Did we forget Prizes?
+        </Heading>
         <Text
+          as="p"
           fontFamily="Rubik"
-          fontSize="22px"
-          textAlign="justify"
-          letterSpacing="tight"
+          fontWeight="normal"
+          fontSize={["xl", "xl", "2xl", "2xl"]}
+          color="454954"
         >
           No, not at all. We know hackers love prizes and swags! But sometimes
           useless prizes are a great turnoff for the people who hack out of
@@ -25,7 +26,7 @@ const Prizesection = () => {
           that’s useful to everyone in the long run. And we’ve got a bunch of
           cool yet useful prizes in this year’s edition.
         </Text>
-      </Flex>
+      </Stack>
     </Box>
   )
 }

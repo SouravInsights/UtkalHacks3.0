@@ -1,0 +1,36 @@
+.badge {
+    position: fixed;
+    left: -7px;
+    top: 19px;
+    background-color:#7289DA;
+    -webkit-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+    -moz-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+    -o-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+    -ms-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+    transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+    text-align: center;
+    color: #ffffff;
+    padding: 0 0.5em;
+    border-top: 0px;
+    line-height: 20px;
+    margin: 0;
+    border-radius: 0px;
+  }
+  
+  .badge:after {
+    content: " ";
+    position: fixed;
+    right: -19px;
+    top: 0px;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #7289DA;
+  }
+  
+  .badge:before {
+    content: " ";
+    position: fixed;
+    left: -19px;
+    top: 0px;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #7289DA;
+  }
