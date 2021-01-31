@@ -20,6 +20,7 @@ const NavBar = (props) => {
   )
 }
 
+
 const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
     <title>Close</title>
@@ -82,19 +83,6 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/how">Prizes </MenuItem>
         <MenuItem to="/pricing">Team </MenuItem>
-        {/* <MenuItem to="/signup" isLast>
-          <Button
-            size="sm"
-            rounded="md"
-            color={["primary.500", "primary.500", "white", "white"]}
-            bg={["white", "white", "primary.500", "blue.50"]}
-            _hover={{
-              bg: ["primary.100", "primary.100", "blue.100", "blue.100"],
-            }}
-          >
-            Join our Community
-          </Button>
-        </MenuItem> */}
       </Stack>
     </Box>
   )
@@ -106,22 +94,26 @@ const NavBarContainer = ({ children, ...props }) => {
       zIndex="2"
       boxShadow="xl"
       position="sticky"
-      top="0"
+      top="0px"
       as="nav"
       align="center"
       justify="space-between"
       wrap="wrap"
-      w="80%"
+      mx="auto"
+      w="90%"
       px={8}
       py={5}
-      bg="#ffffff"
-      /* bg={["blue.100", "blue.100", "primary.500", "primary.500"]}
-      color={["white", "white", "primary.700", "primary.700"]} */
+      backdropFilter="blur(10px)"
+      style={{
+        background: "linear-gradient(90.13deg, rgba(255, 255, 255, 0.5) 1.38%, rgba(199, 199, 190, 0.385417) 53.39%, rgba(255, 255, 255, 0) 99.28%)",
+      }}
       {...props}
     >
-      {children}
-    </Flex>
+      { children}
+    </Flex >
   )
 }
+
+
 
 export default NavBar

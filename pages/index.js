@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
-import NavBar from "../component/Navbar.js/Header.js"
+import NavBar from "../component/Navbar/Header"
 import { Box, Image, Heading, Grid } from "@chakra-ui/react"
 import HeroSection from "../component/Herosection/Herosection.js"
 import Wikisection from "../component/Wiki"

@@ -13,6 +13,7 @@ import { FaPen } from 'react-icons/fa';
 const HeroSection = () => {
   return (
     <Box
+
       bgImage="url('images/Bgimage3.jpg')"
       bgSize={["cover", "cover", "cover", "cover"]}
       bgPosition="center"

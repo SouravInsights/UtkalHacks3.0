@@ -6,27 +6,29 @@ const AboutCard = ({ children, header, body, coverImage, ...props }) => {
 
 
     return (
-        <Box maxW="sm" borderWidth="1px" borderRadius="lg" bg="#E3F891">
-            <Image src={coverImage} />
+        <Box maxW="sm" borderWidth="1px" borderRadius="2px" bg="#E3F891" overflow="hidden">
+            <Image w="100%" borderRadius="2px" src={coverImage} />
             <Box py="24px" px="20px" >
                 <Box
+                    as="h1"
                     fontFamily="Rubik"
                     fontStyle="normal"
                     fontWeight="bold"
-                    fontSize="2xl"
-                    w="100%"
+                    lineHeight="auto"
+                    fontSize={["xl", "xl", "2xl", "2xl"]}
                     color="#000000"
                 >
                     {header}
                 </Box>
 
                 <Box
+                    as="p"
                     fontFamily="Rubik"
                     fontStyle="normal"
                     fontWeight="normal"
-                    fontSize="lg"
+                    fontSize={["md", "md", "lg", "lg"]}
                     color="#454954"
-                    mt="10px">
+                >
                     {body}
                 </Box>
             </Box>

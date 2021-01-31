@@ -2,7 +2,7 @@ import React from 'react'
 import { ChakraProvider, theme } from '@chakra-ui/react'
 import { Global } from "@emotion/react"
 
-
+import NavBar from "../component/Navbar/Header"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -90,6 +90,7 @@ function MyApp({ Component, pageProps }) {
   `
 
         } />
+
       <Component {...pageProps} />
 
     </ChakraProvider>
