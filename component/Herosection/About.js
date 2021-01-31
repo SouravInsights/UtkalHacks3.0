@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {
   Heading,
   Box,
@@ -17,7 +17,6 @@ import { FaArrowLeft, FaArrowRight, FaDiscord } from 'react-icons/fa';
 import Card from '../Card/Card'
 import CardHeader from '../Card/CardHeader';
 import CardBody from '../Card/CardBody';
-import Description from '../Descriptionsection';
 import Aboutcard from '../Card/Aboutcard';
 
 
@@ -27,7 +26,8 @@ const Aboutstory = ({ heading, text, url }) => {
       <Heading
         fontFamily="Rubik"
         fontWeight="black"
-        fontSize="42px"
+        fontSize="4xl"
+        lineHeight="taller"
         letterSpacing="wider"
         color="#252222"
       >
@@ -36,7 +36,8 @@ const Aboutstory = ({ heading, text, url }) => {
       <Text
         fontFamily="Rubik"
         fontWeight="normal"
-        fontSize="2xl"
+        fontSize="xl"
+        color="gray.600"
       >
         {text}
       </Text>
@@ -45,9 +46,8 @@ const Aboutstory = ({ heading, text, url }) => {
 }
 
 const About = () => {
-
   return (
-    <Box my="80px">
+    <Box my="60px">
       {/* Why online hackthon is better? section starts here */}
       <Aboutstory
         heading="<Hack From Home/>"
@@ -73,13 +73,7 @@ const About = () => {
           body="No more chaotic working table. No more random snacks on the floor. Now you can just lock yourself in your room and get the work done! "
         />
       </HStack>
-
-      < Description />
-
-
-
     </Box>
-
   )
 }
 

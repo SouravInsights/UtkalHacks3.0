@@ -83,11 +83,11 @@ const Faqdata = [
 const Faqitems = ({ question, answer }) => {
   return (
     <Box borderWidth="2px">
-      <Accordion borderColor="#FFFF66" allowToggle>
+      <Accordion allowToggle>
         <AccordionItem>
           <AccordionButton
             border="5px"
-            _hover={{ bg: "#FFFF66" }}
+            _hover={{ bg: "#F3E352" }}
             justifyContent="space-between"
           >
             <Box fontSize={["lg", "xl", "2xl", "2xl"]} textAlign="center">
@@ -109,10 +109,10 @@ const FAQ = () => {
     <Flex
       direction="column"
       mx={["10px", "40px", "60px", "200px"]}
-      my="50px"
+      my="60px"
       borderColor="burlywood"
     >
-      <Heading size="2xl" textAlign="center" m="30px">
+      <Heading size="2xl" fontFamily="Rubik" textAlign="center" m="30px">
         FAQ
       </Heading>
       {Faqdata.map((data) => (
