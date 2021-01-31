@@ -12,6 +12,8 @@ import Sprintsection from "../component/Sprintsection"
 import BoxContainer from "../component/BoxContainer.js"
 import Description from "../component/Descriptionsection.js"
 import Prizesection from "../component/Prizesection.js"
+import Socialmedia from "../component/Socialmediasection.js"
+import Footer from "../component/Footer"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -110,7 +112,9 @@ export default function Home({ sponsors }) {
         </Grid>
         {/* Sponsor section ends */}
         <FAQ />
+        <Socialmedia />
       </Box>
+      <Footer />
     </>
   )
 }
