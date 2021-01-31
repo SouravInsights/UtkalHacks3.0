@@ -4,16 +4,13 @@ import { Flex, Text, Heading, Input, Button, HStack, FormControl } from '@chakra
 const Newsletter = ({ heading, text, buttontext }) => {
     return (
         <Flex
-            zIndex="1"
-            px="50px"
-            py="30px"
+            p="32px 150px 36px"
             m="32px"
             bg="#FFFFA0"
             borderRadius="0px"
             justify={{ base: "center", md: "space-around", xl: "space-between" }}
             align="center"
             flexDirection="column"
-            boxShadow="2xl"
         >
             <Heading
                 as="h1"

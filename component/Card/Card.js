@@ -1,12 +1,13 @@
 import React from "react"
-import { Image, Box, Divider } from "@chakra-ui/react"
+import { Image, Box } from "@chakra-ui/react"
 
-const Card = ({ children, header, body, footer, coverImage, ...props }) => {
+const Card = ({ children, header, body, coverImage, ...props }) => {
   return (
     <Box
-      w={"auto"}
-      h={"auto"}
-      mr="50px"
+      w="auto"
+      h="auto"
+      mx="22px"
+      mt="16px"
       background="rgba(255, 255, 160, 1)"
       boxShadow="lg"
       {...props}
@@ -14,10 +15,9 @@ const Card = ({ children, header, body, footer, coverImage, ...props }) => {
       <Image
         w="100%"
         maxH="200px"
-
-        /* borderRadius="10px" */ src={coverImage}
+        src={coverImage}
       />
-      <Box px="20px" pt="10px" pb="10px">
+      <Box px="20px" pt="16px" pb="16px">
         <Box>{header}</Box>
         <Box>{children}</Box>
       </Box>

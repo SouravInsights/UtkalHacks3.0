@@ -7,9 +7,8 @@ const CardBody = ({ children }) => {
       fontFamily="Rubik"
       fontStyle="normal"
       fontWeight="normal"
-      fontSize="sm"
-      lineHeight="shorter"
-      color="#000000"
+      fontSize="lg"
+      color="#454954"
       mt="10px"
     >
       {children}

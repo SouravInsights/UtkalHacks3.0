@@ -9,7 +9,7 @@ import FAQ from "../component/FAQ.js"
 import About from "../component/Herosection/about.js"
 import Whysection from "../component/Whysection.js"
 import Sprintsection from "../component/Sprintsection"
-import Newslettersection from "../component/Newslettersection.js"
+import BoxContainer from "../component/BoxContainer.js"
 import Description from "../component/Descriptionsection.js"
 import Prizesection from "../component/Prizesection.js"
 import Socialmedia from "../component/Socialmediasection.js"
@@ -77,7 +77,7 @@ export default function Home({ sponsors }) {
         />
 
         <Sprintsection />
-        <Newslettersection
+        <BoxContainer
           heading="Have an idea?"
           text="So you've got ideas? Like ... a lot of 'em?
         There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
