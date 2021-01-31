@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   Heading,
   Box,
@@ -8,7 +8,18 @@ import {
   Image,
   Grid,
   GridItem,
+  Stack,
+  Avatar,
+  IconButton
 } from "@chakra-ui/react"
+import { FaArrowLeft, FaArrowRight, FaDiscord } from 'react-icons/fa';
+
+import Card from '../Card/Card'
+import CardHeader from '../Card/CardHeader';
+import CardBody from '../Card/CardBody';
+import CardFooter from '../Card/CardFooter';
+import Description from '../Descriptionsection'
+
 
 const Aboutstory = ({ heading, text, url }) => {
   return (
@@ -37,6 +48,7 @@ const Aboutstory = ({ heading, text, url }) => {
 }
 
 const About = () => {
+
   return (
     <Box my="80px">
       {/* Why online hackthon is better? section starts here */}
@@ -45,129 +57,96 @@ const About = () => {
         text="From broken coffee machines to the monotony of sitting for long hours at a stretch, this paradigm shift to online hackathons rids you of many such hiccups that you normally face in an offline experience. Going virtual empowers you to create revolutionary hacks at the comfort of your sofa!"
       />
 
-      <SimpleGrid columns={3} gap="80px">
-        <Box>
-          <Image src="/card.png" />
-        </Box>
-        <Box>
-          <Image src="/card.png" />
-        </Box>
-        <Box>
-          <Image src="/card.png" />
-        </Box>
-      </SimpleGrid>
-      {/* Design-sprint section starts here */}
-      <Grid
-        display={{ sm: "flex", md: "grid" }}
-        templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(6, 1fr)"
-        gap={10}
-        my="20px"
-      >
-        <GridItem rowSpan={1} colSpan={2}>
-          <Image src="images/DSP1.jpg" />
-        </GridItem>
-        <GridItem colSpan={4} alignContent="center" justifyContent="center">
-          <Heading fontSize={["md", "md", "lg", "50px"]}>
-            Design Sprint to the Rescue!
-          </Heading>
-          <Text fontSize={["sm", "lg", "md", "xl"]}>
-            Hackathons are great, until they are not! With unguided, unclear
-            direction, hackathons can be bloated with vaporware. When we don’t
-            know the problem that we’re trying to solve, we might just build
-            something that no one never wanted.
-          </Text>
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Image src="images/DSP2.jpg" />
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Image src="images/DSP3.jpg" />
-        </GridItem>
-        <GridItem colSpan={2}>
-          <Image src="images/DSP4.jpg" />
-        </GridItem>
-      </Grid>
-      <Box
-        justifyContent="center"
-        textAlign="center"
-        py="10px"
-      >
-        <Heading
-          fontFamily="Rubik"
-          fontStyle="normal"
-          fontWeight="black"
-          fontSize="220px"
-          lineHeight="261px"
-          color="#FE4A26"
+      {/* Card Section start here */}
+      {/*  <SimpleGrid columns={3} gap="80px" > */}
+      <Flex direction="row" my="20px" >
+
+        <Flex
+          direction="row"
+          overflow="auto"
+          css={{
+            '&::-webkit-scrollbar': {
+              display: "none",
+            }
+          }}
         >
-          15
-        </Heading>
-        <Text
-          fontFamily="Rubik Mono One"
-          fontStyle="normal"
-          fontWeight="normal"
-          fontSize="80px"
-          lineHeight="99px"
-          color="#252222"
-        >
-          DAYS
-        </Text>
-        <Text
-          fontFamily="Rubik Mono One"
-          fontStyle="normal"
-          fontWeight="normal"
-          fontSize="66px"
-          lineHeight="82px"
-          color="#252222"
-        >
-          OF...
-        </Text>
-        <Text
-          fontFamily="Rubik"
-          fontStyle="normal"
-          fontWeight="bold"
-          fontSize="30px"
-          lineHeight="36px"
-          letterSpacing="wider"
-          color="#252222"
-        >
-          DESIGNING / BUILDING / CODING / HACKING
-        </Text>
-        <Text
-          fontFamily="Rubik"
-          fontStyle="normal"
-          fontWeight="medium"
-          fontSize="26px"
-          lineHeight="31px"
-          letterSpacing="wider"
-          color="#252222"
-        >
-          NETWORKING / FRIENDS / MENTORS / CHALLENGES
-        </Text>
-        <Text
-          fontFamily="Rubik"
-          fontStyle="normal"
-          fontWeight="medium"
-          fontSize="20px"
-          lineHeight="24px"
-          letterSpacing="wider"
-          color="#252222"
-        >
-          TECH TALKS / WORKSHOPS / FUN ACTIVITIES/ SCHWAGS/ PRIZES
-        </Text>
-        <Text
-          fontFamily="Rubik"
-          fontStyle="normal"
-          fontWeight="medium"
-          fontSize="16px"
-          lineHeight="19px"
-          letterSpacing="wider"
-          color="#252222"
-        >
-          AND/ A / WHOLE/LOT/ MORE . . .
-        </Text>
-      </Box>
+          {/* Card 1*/}
+          <Card
+            border="1px solid #DED9D9"
+            coverImage={'images/Bgimage2.jpg'}
+            header={
+              <CardHeader
+                title="A better working environment."
+              />
+            }
+          >
+            <CardBody>
+              <Text direction="row">
+                No more chaotic working table. No more random snacks on the floor. Now you can just lock yourself in your room and get the work done!
+                </Text>
+            </CardBody>
+          </Card>
+
+          {/* Card 2*/}
+          <Card
+            border="1px solid #DED9D9"
+            coverImage={'images/Bgimage3.jpg'}
+            header={
+              <CardHeader
+                title="Better physical & mental state!"
+              />
+            }
+          >
+            <CardBody>
+              <Text direction="row">
+                No more chaotic working table. No more random snacks on the floor. Now you can just lock yourself in your room and get the work done!
+                </Text>
+            </CardBody>
+          </Card>
+
+          {/* Card 3*/}
+          <Card
+            border="1px solid #DED9D9"
+            coverImage={'images/DSP1.jpg'}
+            header={
+              <CardHeader
+                title="Better team collaboration ."
+              />
+            }
+          >
+            <CardBody>
+              <Text direction="row">
+                No more chaotic working table. No more random snacks on the floor. Now you can just lock yourself in your room and get the work done!
+                </Text>
+            </CardBody>
+          </Card>
+
+        </Flex>
+        {/* <IconButton
+            boxShadow="2xl"
+            borderRadius="50px"
+            color="black"
+            colorScheme="white"
+            size="lg"
+            icon={<FaArrowLeft />}
+            onClick={prevSlide}
+          /> */}
+        {/*    <IconButton
+            boxShadow="2xl"
+            borderRadius="50px"
+            color="black"
+            colorScheme="gray.400"
+            size="lg"
+            icon={<FaArrowRight />}
+            onClick={nextSlide}
+          />*/}
+      </Flex>
+      {/* </SimpleGrid> */}
+
+      < Description />
+
+
+
     </Box>
 
   )

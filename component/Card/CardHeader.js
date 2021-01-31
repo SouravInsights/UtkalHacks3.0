@@ -1,41 +1,21 @@
 import React from "react"
-import { Box, VStack, Text, Heading, Tag } from "@chakra-ui/core"
+import { Box, VStack, Text, Heading, Tag } from "@chakra-ui/react"
 
 const CardHeader = ({ date, title, mode }) => {
   return (
-    <VStack maxH="180px" align="normal" spacing="3px">
-      <Text
-        fontFamily="sans-serif"
-        fontWeight="medium"
-        fontSize="xs"
-        lineHeight="normal"
-        color="#6D6D6D"
-      >
-        {date}
-      </Text>
+    <Box maxH="180px" align="normal" spacing="3px">
       <Heading
-        maxH="180px"
-        w="180px"
+        fontFamily="Rubik"
+
+        w="100%"
         fontWeight="bold"
-        fontSize="md"
-        lineHeight="base"
+        fontSize="lg"
+        lineHeight="short"
         color="#000000"
       >
         {title}
       </Heading>
-      <Box>
-        <Tag
-          size="sm"
-          fontFamily="sans-serif"
-          fontWeight="medium"
-          lineHeight="normal"
-          fontSize="xs"
-          colorScheme="teal"
-        >
-          {mode}
-        </Tag>
-      </Box>
-    </VStack>
+    </Box>
   )
 }
 export default CardHeader

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, Link, Button, Box, } from '@chakra-ui/core'
+import { HStack, Link, Button, Box, } from '@chakra-ui/react'
 
 const CardFooter = () => {
     return (

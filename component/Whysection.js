@@ -5,19 +5,21 @@ function Whysection({ heading, text, url, reverse }) {
   return (
     <Stack
       direction={reverse === "true" ? "row-reverse" : "row"}
-      justifyContent="space-between"
       spacing="80px"
-      my="136px"
+      mb="130px"
     >
-      <Box maxH="322px">
-        <Image src={url} />
-      </Box>
-
+      <Image src={url} />
       <Box>
-        <Text fontSize="36px" fontWeight="normal" lineHeight="45px">
+        <Text
+          fontFamily="Rubik Mono One"
+          fontSize="36px"
+          fontWeight="normal"
+          lineHeight="45px"
+        >
           {heading}
         </Text>
         <Text
+          fontFamily="Rubik"
           fontSize="22px"
           fontWeight="normal"
           lineHeight="26px"
