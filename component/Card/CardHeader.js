@@ -6,11 +6,10 @@ const CardHeader = ({ date, title, mode }) => {
     <Box maxH="180px" align="normal" spacing="3px">
       <Heading
         fontFamily="Rubik"
-
-        w="100%"
+        fontStyle="normal"
         fontWeight="bold"
-        fontSize="lg"
-        lineHeight="short"
+        fontSize="2xl"
+        w="100%"
         color="#000000"
       >
         {title}

@@ -9,7 +9,7 @@ import FAQ from "../component/FAQ.js"
 import About from "../component/Herosection/about.js"
 import Whysection from "../component/Whysection.js"
 import Sprintsection from '../component/Sprintsection'
-import Newslettersection from "../component/Newslettersection.js"
+import Newslettersection from "../component/BoxContainer .js"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
