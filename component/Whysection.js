@@ -1,34 +1,41 @@
 import React from "react"
-import { Flex, Image, Box, Text, Stack } from "@chakra-ui/react"
+import {
+  Flex,
+  Image,
+  SimpleGrid,
+  Heading,
+  Text,
+  Stack,
+  Container,
+} from "@chakra-ui/react"
 
 function Whysection({ heading, text, url, reverse }) {
   return (
-    <Stack
-      direction={reverse === "true" ? "row-reverse" : "row"}
-      spacing="80px"
-      mb="130px"
-    >
-      <Image src={url} />
-      <Box>
-        <Text
-          fontFamily="Rubik Mono One"
-          fontSize="36px"
-          fontWeight="normal"
-          lineHeight="45px"
-        >
-          {heading}
-        </Text>
-        <Text
-          fontFamily="Rubik"
-          fontSize="22px"
-          fontWeight="normal"
-          lineHeight="26px"
-          textAlign="justify"
-        >
-          {text}
-        </Text>
-      </Box>
-    </Stack>
+    <Container maxW={"8xl"}>
+      <SimpleGrid py={8} spacing={6} columns={{ base: 1, lg: 2 }}>
+        <Stack spacing={5} maxW={{ md: "xl" }}>
+          <Heading
+            fontFamily="Rubik"
+            fontSize={["2xl", "3xl", "3xl", "4xl"]}
+            fontWeight="extrabold"
+          >
+            {heading}
+          </Heading>
+          <Text
+            fontSize={["lg", "lg", "xl", "22px"]}
+            fontWeight="normal"
+            textAlign="justify"
+            color="gray.600"
+          >
+            {text}
+          </Text>
+        </Stack>
+
+        <Flex alignItems={"center"} justifyContent={"center"}>
+          <Image src={url} width={400} height={280} />
+        </Flex>
+      </SimpleGrid>
+    </Container>
   )
 }
 

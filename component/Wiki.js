@@ -2,16 +2,22 @@ import { Flex, Box, Text, Heading, Button } from "@chakra-ui/react"
 
 const Wikisection = () => {
   return (
-    <Flex direction="column" my="20px">
+    <Flex direction="column" my="60px">
       <Box align="center">
-        <Heading size="2xl" fontFamily="Rubik">
+        <Text
+          fontSize="4xl"
+          fontFamily="Rubik"
+          fontWeight="black"
+          letterSpacing="wide"
+        >
           Our Wiki
-        </Heading>
+        </Text>
         <Text
           fontStyle="Rubik"
-          fontSize={["lg", "lg", "xl", "3xl"]}
+          fontSize={["lg", "lg", "xl", "22px"]}
           fontWeight="normal"
-          textAlign="left"
+          color="gray.600"
+          textAlign="justify"
         >
           There has been a lot of Hackathons happening all over the globe and
           especially in india it's being skyrocketed. But the question is, do we
@@ -22,10 +28,11 @@ const Wikisection = () => {
         <Button
           size={["lg"]}
           color="#ffffff"
-          _hover={{ bg: "blue" }}
-          _active={{ borderColor: "" }}
+          borderRadius="0px"
+          outline="none"
+          _hover={{ bg: "gray.300" }}
           my="20px"
-          backgroundColor="#3182ce"
+          bg="#000000"
         >
           Read our Wiki
         </Button>

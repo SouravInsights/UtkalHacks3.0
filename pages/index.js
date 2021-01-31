@@ -8,8 +8,9 @@ import Wikisection from "../component/Wiki"
 import FAQ from "../component/FAQ.js"
 import About from "../component/Herosection/about.js"
 import Whysection from "../component/Whysection.js"
-import Sprintsection from '../component/Sprintsection'
+import Sprintsection from "../component/Sprintsection"
 import Newslettersection from "../component/Newslettersection.js"
+import Description from "../component/Descriptionsection.js"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -53,6 +54,7 @@ export default function Home({ sponsors }) {
         px={["30px", "30px", "80px", "120px"]}
       >
         <About />
+        <Description />
 
         <Whysection
           url="/learning-bg.png"
@@ -71,9 +73,8 @@ export default function Home({ sponsors }) {
           text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
         />
 
-        < Sprintsection />
-        < Newslettersection
-
+        <Sprintsection />
+        <Newslettersection
           heading="Have an idea?"
           text="So you've got ideas? Like ... a lot of 'em?
         There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
@@ -81,7 +82,7 @@ export default function Home({ sponsors }) {
         />
         <Wikisection />
 
-        <Heading fontFamily="Rubik" size="2xl" textAlign="center" m="30px" >
+        <Heading fontFamily="Rubik" size="2xl" textAlign="center" mt="60px">
           Our Past Sponsors
         </Heading>
         {/* Sponsor section starts */}
@@ -90,6 +91,7 @@ export default function Home({ sponsors }) {
           placeItems="center"
           templateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)"]}
           gap={10}
+          mt="20px"
         >
           {sponsors.map((sponsor) => (
             <Box maxW={["100%", "100%", "90%", "80%"]}>
