@@ -11,6 +11,7 @@ import Whysection from "../component/Whysection.js"
 import Sprintsection from "../component/Sprintsection"
 import Newslettersection from "../component/Newslettersection.js"
 import Description from "../component/Descriptionsection.js"
+import Prizesection from "../component/Prizesection.js"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -80,9 +81,17 @@ export default function Home({ sponsors }) {
         There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
           buttontext="Write us your ideas"
         />
+
+        <Prizesection />
         <Wikisection />
 
-        <Heading fontFamily="Rubik" size="2xl" textAlign="center" mt="60px">
+        <Heading
+          fontFamily="Rubik"
+          size="2xl"
+          fontWeight="extrabold"
+          textAlign="center"
+          mt="60px"
+        >
           Our Past Sponsors
         </Heading>
         {/* Sponsor section starts */}
