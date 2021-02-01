@@ -43,7 +43,6 @@ const HeroSection = () => {
           label=" Apply with Devfolio"
           rightIcon={<FaPen />}
         />
-
       </Stack>
     </Box >
 

@@ -1,6 +1,6 @@
 import { Flex, Box, Text, Heading, Button } from "@chakra-ui/react"
 
-const Wikisection = () => {
+const WikiSection = () => {
   return (
     <Flex direction="column" my="60px">
       <Box align="center">
@@ -40,4 +40,4 @@ const Wikisection = () => {
     </Flex>
   )
 }
-export default Wikisection
+export default WikiSection
