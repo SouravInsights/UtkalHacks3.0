@@ -47,7 +47,7 @@ const SprintSection = () => {
       </GridItem>
 
       <GridItem colSpan={["1", "3", "3", "2", "2"]}>
-        <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205684/UtkalHacks%203.0/DSP4_ieytm6.webp.jpg" />
+        <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205684/UtkalHacks%203.0/DSP4_ieytm6.webp" />
       </GridItem>
 
       <GridItem
