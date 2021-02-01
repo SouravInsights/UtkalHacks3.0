@@ -39,21 +39,21 @@ const SprintSection = () => {
       </GridItem>
 
       <GridItem colSpan={["1", "3", "3", "2", "2"]}>
-        <Image src="images/DSP1.jpg" />
+        <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205738/UtkalHacks%203.0/DSP1_e8fym8.webp" />
       </GridItem>
 
       <GridItem colSpan={["1", "3", "3", "2", "2"]}>
-        <Image objectFit="fill" src="images/DSP2.jpg" />
+        <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1612205708/UtkalHacks%203.0/DSP2_oqpurs.webp" />
       </GridItem>
 
       <GridItem colSpan={["1", "3", "3", "2", "2"]}>
-        <Image src="images/DSP4.jpg" />
+        <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205684/UtkalHacks%203.0/DSP4_ieytm6.webp.jpg" />
       </GridItem>
 
       <GridItem
         colSpan={["1", "3", "3", "2", "2"]}
       >
-        <Image src="images/DSP3.jpg" />
+        <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205701/UtkalHacks%203.0/DSP3_dyd0u6.webp" />
       </GridItem>
     </Grid>
   )
