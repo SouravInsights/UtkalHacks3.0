@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading, Box, Text, Stack } from "@chakra-ui/react"
 
-const Prizesection = () => {
+const PrizeSection = () => {
   return (
     <Box my="80px">
       <Stack spacing="20px" direction="column">
@@ -31,4 +31,4 @@ const Prizesection = () => {
   )
 }
 
-export default Prizesection
+export default PrizeSection

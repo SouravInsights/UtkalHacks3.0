@@ -1,15 +1,15 @@
-import React, { useState } from "react"
-import { Heading, Box, Text } from "@chakra-ui/react"
+import React from "react"
+import { Heading, Stack, Text } from "@chakra-ui/react"
 
-const Description = () => {
+const DescriptionSection = () => {
   return (
-    <Box justifyContent="center" textAlign="center" my="60px">
+    <Stack justifyContent="center" textAlign="center" my="60px">
       <Heading
         fontFamily="Rubik"
         fontStyle="normal"
         fontWeight="black"
-        fontSize="220px"
-        lineHeight="261px"
+        fontSize={["180px", "180px", "180px", "220px", "220px"]}
+        lineHeight="normal"
         color="#FE4A26"
       >
         15
@@ -18,8 +18,8 @@ const Description = () => {
         fontFamily="Rubik Mono One"
         fontStyle="normal"
         fontWeight="normal"
-        fontSize="80px"
-        lineHeight="99px"
+        fontSize={["60px", "60px", "60px", "60px", "60px"]}
+        lineHeight="normal"
         color="#252222"
       >
         DAYS
@@ -28,19 +28,18 @@ const Description = () => {
         fontFamily="Rubik Mono One"
         fontStyle="normal"
         fontWeight="normal"
-        fontSize="66px"
-        lineHeight="82px"
+        fontSize={["60px", "60px", "60px", "60px", "60px"]}
+        lineHeight="normal"
         color="#252222"
       >
-        OF...
+        OF..
       </Text>
       <Text
         fontFamily="Rubik"
         fontStyle="normal"
         fontWeight="bold"
         fontSize="30px"
-        lineHeight="36px"
-        letterSpacing="wider"
+        lineHeight="normal"
         color="#252222"
       >
         DESIGNING / BUILDING / CODING / HACKING
@@ -50,8 +49,7 @@ const Description = () => {
         fontStyle="normal"
         fontWeight="medium"
         fontSize="26px"
-        lineHeight="31px"
-        letterSpacing="wider"
+        lineHeight="normal"
         color="#252222"
       >
         NETWORKING / FRIENDS / MENTORS / CHALLENGES
@@ -61,8 +59,7 @@ const Description = () => {
         fontStyle="normal"
         fontWeight="medium"
         fontSize="20px"
-        lineHeight="24px"
-        letterSpacing="wider"
+        lineHeight="normal"
         color="#252222"
       >
         TECH TALKS / WORKSHOPS / FUN ACTIVITIES/ SCHWAGS/ PRIZES
@@ -72,14 +69,13 @@ const Description = () => {
         fontStyle="normal"
         fontWeight="medium"
         fontSize="16px"
-        lineHeight="19px"
-        letterSpacing="wider"
+        lineHeight="normal"
         color="#252222"
       >
         AND/ A / WHOLE/LOT/ MORE . . .
       </Text>
-    </Box>
+    </Stack>
   )
 }
 
-export default Description
+export default DescriptionSection

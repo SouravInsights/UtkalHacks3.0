@@ -1,8 +1,9 @@
 import React from "react"
-import { Flex, Box, Icon, Button, Text, VStack, Stack } from "@chakra-ui/react"
+import { Flex, Box, Icon, Text, VStack, Stack } from "@chakra-ui/react"
 import { FaDiscord, FaTwitter } from "react-icons/fa"
+import Button from "./Button"
 
-const Socialmedia = () => {
+const SocialMediaSection = () => {
   return (
     <Stack
       spacing={4}
@@ -31,16 +32,7 @@ const Socialmedia = () => {
         >
           Start the Conversation
         </Text>
-        <Button
-          size={["lg"]}
-          color="#ffffff"
-          borderRadius="0px"
-          outline="none"
-          _hover={{ bg: "gray.300" }}
-          bg="#000000"
-        >
-          Join our Discord
-        </Button>
+        <Button label=" Join our Discord" />
       </VStack>
       <VStack spacing={4} justifyContent="center" alignItems="center">
         <Icon
@@ -59,19 +51,10 @@ const Socialmedia = () => {
         >
           Don't miss any updates!
         </Text>
-        <Button
-          size={["lg"]}
-          color="#ffffff"
-          borderRadius="0px"
-          outline="none"
-          _hover={{ bg: "gray.300" }}
-          bg="#000000"
-        >
-          Follow us on Twitter
-        </Button>
+        <Button label="Follow us on Twitter" />
       </VStack>
     </Stack>
   )
 }
 
-export default Socialmedia
+export default SocialMediaSection

@@ -10,21 +10,22 @@ const Footer = () => {
       px="30px"
       justifyContent="center"
       alignContent="center"
-      bg="#000000"
+      bg="#1D1B1B"
     >
       <Text
+        as="p"
         fontFamily="Rubik"
-        fontSize={["lg", "lg", "2xl", "2xl"]}
         fontWeight="normal"
-        textAlign="center"
-        letterSpacing="wide"
+        fontSize={["lg", "lg", "xl", "xl", "xl"]}
         color="#ffffff"
+        letterSpacing="wide"
+        textAlign="center"
       >
         You never know what you could possibly build at Hackathons.
       </Text>
       <Text
         fontFamily="Rubik"
-        fontSize={["xl", "xl", "4xl", "4xl"]}
+        fontSize={["2xl", "2xl", "3xl", "4xl", "4xl"]}
         fontWeight="bold"
         textAlign="center"
         letterSpacing="wide"

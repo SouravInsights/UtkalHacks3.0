@@ -1,30 +1,26 @@
 import React from "react"
 import {
-  Stack,
   Box,
-  Image,
   Text,
-  Button,
+  Stack,
   Heading,
-  StylesProvider,
 } from "@chakra-ui/react"
 import { FaPen } from 'react-icons/fa';
+import Button from "../Button"
 
 const HeroSection = () => {
   return (
     <Box
-
-      bgImage="url('images/Bgimage3.jpg')"
+      bgImage="url('https://res.cloudinary.com/emishalabs/image/upload/q_80/v1612203030/UtkalHacks%203.0/camputer-image_zmpt7b.webp')"
       bgSize={["cover", "cover", "cover", "cover"]}
       bgPosition="center"
       bgRepeat="no-repeat"
     >
-      <Box pt={["150px", "400px", "650px", "650px"]} align="center" zIndex="1" direction="column" >
+      <Stack pt={["150px", "400px", "650px", "650px"]} align="center" zIndex="1">
         <Heading
           fontFamily="rubik"
           fontWeight="black"
-          fontSize={["3xl", "4xl", "70px", "70px"]}
-          lineHeight="83px"
+          fontSize={["4xl", "5xl", "70px", "70px", "70px"]}
           textAlign="center"
           textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
           color="#ffffff"
@@ -34,10 +30,7 @@ const HeroSection = () => {
         <Text
           fontFamily="rubik"
           fontWeight="medium"
-          fontSize={["lg", "2xl", "3xl", "3xl"]}
-          lineHeight="33px"
-          zIndex="1"
-          mb="5px"
+          fontSize={["xl", "2xl", "3xl", "3xl", "3xl"]}
           color="#ffffff"
           textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
         >
@@ -45,21 +38,13 @@ const HeroSection = () => {
         </Text>
 
         <Button
-          size={["xs", "sm", "lg", "lg"]}
-          w={["250px", "300px", "300px", "300px"]}
-          h={["40px", "50px", "60px", "60px"]}
-          mb={["-20px", "-24px", "-30px", "-30px"]}
-          borderRadius="0px"
-          color="white"
-          bg="black"
-          _hover={{
-            bg: ["primary.100", "primary.100", "blue.100", "blue.100"]
-          }}
+          withIcon
+          mb={["-25px", "-25px", "-25px", "-25px", "-25px"]}
+          label=" Apply with Devfolio"
           rightIcon={<FaPen />}
-        >
-          Apply with Devfolio
-      </Button>
-      </Box>
+        />
+
+      </Stack>
     </Box >
 
   )

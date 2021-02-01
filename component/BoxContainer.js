@@ -1,7 +1,10 @@
 import React from 'react'
-import { Flex, Text, Heading, Stack, Button, HStack } from '@chakra-ui/react'
+import { Flex, Box } from '@chakra-ui/react'
+import Section from "./Section"
+import Button from "./Button"
+import { FaPen } from 'react-icons/fa';
 
-const Newsletter = ({ heading, text, buttontext }) => {
+const Newsletter = ({ heading, description, buttontext }) => {
     return (
         <Flex
             py="32px"
@@ -12,37 +15,16 @@ const Newsletter = ({ heading, text, buttontext }) => {
             align="center"
             flexDirection="column"
         >
-            <Stack spacing="20px" alignItems="center">
-                <Heading
-                    fontFamily="Rubik"
-                    fontWeight="black"
-                    fontSize={["2xl", "2xl", "4xl", "4xl"]}
-                    color="#252222"
-                >
-                    {heading}
-                </Heading>
-                <Text
-                    as="p"
-                    fontFamily="Rubik"
-                    fontWeight="normal"
-                    fontSize={["xl", "xl", "2xl", "2xl"]}
-                    color="454954"
-                >
-                    {text}
-                </Text>
-                <Button
-                    size={["lg"]}
-                    color="#ffffff"
-                    borderRadius="0px"
-                    outline="none"
-                    _hover={{ bg: "gray.300" }}
-                    bg="#000000"
-                >
-                    {buttontext}
-                </Button>
-            </Stack>
-
+            <Section center="true" justify="center" align="center" heading={heading} description={description}>
+                <Box>
+                    <Button
+                        label={buttontext}
+                        withIcon
+                        rightIcon={<FaPen />}
+                    />
+                </Box>
+            </Section>
         </Flex >
-    );
+    )
 }
 export default Newsletter;

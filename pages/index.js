@@ -7,12 +7,12 @@ import HeroSection from "../component/Herosection/Herosection.js"
 import Wikisection from "../component/Wiki"
 import FAQ from "../component/FAQ.js"
 import About from "../component/Herosection/About.js"
-import Whysection from "../component/Whysection.js"
-import Sprintsection from "../component/Sprintsection"
+import WhySection from "../component/WhySection.js"
+import SprintSection from "../component/SprintSection"
 import BoxContainer from "../component/BoxContainer.js"
-import Description from "../component/Descriptionsection"
-import Prizesection from "../component/Prizesection.js"
-import Socialmedia from "../component/SocialMediaSection"
+import DescriptionSection from "../component/DescriptionSection"
+import PrizeSection from "../component/PrizeSection.js"
+import SocialMediaSection from "../component/SocialMediaSection"
 import Footer from "../component/Footer"
 import Badge from "../component/Badge/Badge"
 
@@ -49,50 +49,51 @@ export default function Home({ sponsors }) {
   return (
     <>
       <Head>
-        <title>UtkalHacks3.0</title>
+        <title>UtkalHacks 3.0</title>
       </Head>
       <Badge />
       <NavBar />
       <HeroSection />
       <Box
-        px={["30px", "30px", "80px", "120px"]}
+        px={["20px", "30px", "50px", "65px", "80px"]}
       >
         <About />
-        <Description />
+        <DescriptionSection />
 
-        <Whysection
-          url="/learning-bg.png"
+        <WhySection
+          coverImage="/learning-bg.png"
           heading="Learn something new!"
-          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
         />
-        <Whysection
+        <WhySection
           reverse="true"
-          url="/learning-bg.png"
+          coverImage="/learning-bg.png"
           heading="Build nifty ideas!"
-          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
         />
-        <Whysection
-          url="/learning-bg.png"
+        <WhySection
+          coverImage="/learning-bg.png"
           heading="Meet smart people!"
-          text="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
         />
 
-        <Sprintsection />
+        <SprintSection />
         <BoxContainer
           heading="Have an idea?"
-          text="So you've got ideas? Like ... a lot of 'em?
-        There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
+          description="So you've got ideas? Like ... a lot of 'em?
+          There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
           buttontext="Write us your ideas"
         />
 
-        <Prizesection />
+        <PrizeSection />
         {/*      <Wikisection />
         */}
         <Heading
           fontFamily="Rubik"
           fontWeight="black"
-          fontSize={["2xl", "2xl", "4xl", "4xl"]}
+          fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
           color="#252222"
+          letterSpacing="wide"
           textAlign="center"
         >
           Our Past Sponsors
@@ -114,7 +115,7 @@ export default function Home({ sponsors }) {
         {/* Sponsor section ends */}
         {/* <FAQ /> */}
       </Box>
-      <Socialmedia />
+      <SocialMediaSection />
       <Footer />
     </>
   )
