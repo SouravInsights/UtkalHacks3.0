@@ -1,6 +1,5 @@
 import React from "react"
 import { ChakraProvider, theme } from "@chakra-ui/react"
-import { Global } from "@emotion/react"
 
 function MyApp({ Component, pageProps }) {
   return (
