@@ -1,5 +1,5 @@
 import React from "react"
-import { Global } from "@chakra-ui/react"
+import { Global } from "@emotion/react"
 
 const Fonts = () => {
   return (
