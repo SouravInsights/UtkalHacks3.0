@@ -20,9 +20,9 @@ const PrizeSection = () => {
         >
           No, not at all. We know hackers love prizes and swags! But sometimes
           useless prizes are a great turnoff for the people who hack out of
-          passion. This year we are focusing more on providing valuable prizes
-          that’s useful to everyone in the long run. And we’ve got a bunch of
-          cool yet useful prizes in this year’s edition.
+          passion. This year, we are focusing more on providing valuable prizes
+          that are useful to everyone in the long run. And we’ve got a bunch of
+          cool but useful ones in this year’s edition.
         </Text>
       </Stack>
     </Box>

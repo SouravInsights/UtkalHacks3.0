@@ -54,27 +54,26 @@ export default function Home({ sponsors }) {
       <Badge />
       <NavBar />
       <HeroSection />
-      <Box
-        px={["20px", "30px", "50px", "65px", "80px"]}
-      >
+      <Box px={["20px", "30px", "50px", "65px", "80px"]}>
         <About />
         <DescriptionSection />
 
         <WhySection
           coverImage="/learning-bg.png"
           heading="Learn something new!"
-          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills, the exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro.
+          "
         />
         <WhySection
           reverse="true"
           coverImage="/learning-bg.png"
           heading="Build nifty ideas!"
-          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Ideate with your team. Strategize with the utmost precision. Develop with your tools of choice and bring your hacks to life! If there was a right time to get serious on that handy idea you thought of in the shower, this is it! Ideas may look small in our heads, but nobody really knows their impact until and unless they manifest into reality."
         />
         <WhySection
           coverImage="/learning-bg.png"
           heading="Meet smart people!"
-          description="Get exposed to actual problems to work on. Opportunity to solve problems fast, and push yourself beyond your comfort zone. Enhance your ability to work under pressure and acquire new technical skills. The exposure to interact with smart people improving your soft skills. Master the art of pitching project ideas like a pro."
+          description="Too shy to approach someone physically? The virtual experience lets you connect with sharp and like-minded people in your comfort zone. Build a circle that pushes you to grow. Network with masters of their crafts and learn from them. Or simply find peers on the same career roadmap. The possibilities are endless!"
         />
 
         <SprintSection />
@@ -87,7 +86,7 @@ export default function Home({ sponsors }) {
 
         <PrizeSection />
         {/*      <Wikisection />
-        */}
+         */}
         <Heading
           fontWeight="black"
           fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
