@@ -6,7 +6,6 @@ const PrizeSection = () => {
     <Box my="80px">
       <Stack spacing="20px" direction="column">
         <Heading
-          fontFamily="Rubik"
           fontWeight="black"
           fontSize={["2xl", "2xl", "4xl", "4xl"]}
           color="#252222"
@@ -15,7 +14,6 @@ const PrizeSection = () => {
         </Heading>
         <Text
           as="p"
-          fontFamily="Rubik"
           fontWeight="normal"
           fontSize={["xl", "xl", "2xl", "2xl"]}
           color="454954"

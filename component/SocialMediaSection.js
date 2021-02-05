@@ -23,7 +23,6 @@ const SocialMediaSection = () => {
         />
         <Text
           textAlign="center"
-          fontFamily="Rubik"
           fontSize={["lg", "xl", "2xl", "3xl"]}
           fontWeight="bold"
           letterSpacing="wide"
@@ -42,7 +41,6 @@ const SocialMediaSection = () => {
         />
         <Text
           textAlign="center"
-          fontFamily="Rubik"
           fontSize={["lg", "xl", "2xl", "3xl"]}
           fontWeight="bold"
           letterSpacing="wide"

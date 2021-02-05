@@ -14,7 +14,6 @@ const Footer = () => {
     >
       <Text
         as="p"
-        fontFamily="Rubik"
         fontWeight="normal"
         fontSize={["lg", "lg", "xl", "xl", "xl"]}
         color="#ffffff"
@@ -24,7 +23,6 @@ const Footer = () => {
         You never know what you could possibly build at Hackathons.
       </Text>
       <Text
-        fontFamily="Rubik"
         fontSize={["2xl", "2xl", "3xl", "4xl", "4xl"]}
         fontWeight="bold"
         textAlign="center"

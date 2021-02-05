@@ -18,7 +18,6 @@ const HeroSection = () => {
     >
       <Stack pt={["150px", "400px", "650px", "650px"]} align="center" zIndex="1">
         <Heading
-          fontFamily="rubik"
           fontWeight="black"
           fontSize={["4xl", "5xl", "70px", "70px", "70px"]}
           textAlign="center"
@@ -28,7 +27,6 @@ const HeroSection = () => {
           UtkalHacks 3.0
           </Heading>
         <Text
-          fontFamily="rubik"
           fontWeight="medium"
           fontSize={["xl", "2xl", "3xl", "3xl", "3xl"]}
           color="#ffffff"
