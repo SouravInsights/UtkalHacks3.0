@@ -28,7 +28,7 @@ const About = () => {
         <Aboutcard
           coverImage="https://res.cloudinary.com/emishalabs/image/upload/q_30/v1612203738/UtkalHacks%203.0/E122FB34-4451-46B4-880A-A992B5EDD8AF_p2okwy.webp"
           header="Better physical & mental state"
-          body="No more late night struggles. No more burnouts. Now you can get into serious hacking without serious repercussions, focusing on your idea and not that sleeping space you could miss out on."
+          body="No more late night struggles. No more burnouts. Now, not just you can recharge your mind and body but also sleep on your ideas and take it to the next level."
         />
 
         <Aboutcard
