@@ -1,10 +1,11 @@
-import React from "react"
-import { Heading, Stack, Text } from "@chakra-ui/react"
+import React from "react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
 
 const DescriptionSection = () => {
   return (
     <Stack justifyContent="center" textAlign="center" my="60px">
       <Heading
+        as="h1"
         fontWeight="black"
         fontSize={["180px", "180px", "180px", "220px", "220px"]}
         lineHeight="normal"
@@ -12,29 +13,25 @@ const DescriptionSection = () => {
       >
         15
       </Heading>
-      <Text
-        fontFamily="Rubik Mono One"
-        fontStyle="normal"
-        fontWeight="normal"
+      <Heading
+        as="h1"
+        fontWeight="black"
         fontSize={["60px", "60px", "60px", "60px", "60px"]}
         lineHeight="normal"
         color="#252222"
       >
         DAYS
-      </Text>
-      <Text
-        fontFamily="Rubik Mono One"
-        fontStyle="normal"
-        fontWeight="normal"
+      </Heading>
+      <Heading
+        as="h1"
+        fontWeight="black"
         fontSize={["60px", "60px", "60px", "60px", "60px"]}
         lineHeight="normal"
         color="#252222"
       >
         OF..
-      </Text>
+      </Heading>
       <Text
-        fontFamily="Rubik"
-        fontStyle="normal"
         fontWeight="bold"
         fontSize="30px"
         lineHeight="normal"
@@ -43,8 +40,6 @@ const DescriptionSection = () => {
         DESIGNING / BUILDING / CODING / HACKING
       </Text>
       <Text
-        fontFamily="Rubik"
-        fontStyle="normal"
         fontWeight="medium"
         fontSize="26px"
         lineHeight="normal"
@@ -53,8 +48,6 @@ const DescriptionSection = () => {
         NETWORKING / FRIENDS / MENTORS / CHALLENGES
       </Text>
       <Text
-        fontFamily="Rubik"
-        fontStyle="normal"
         fontWeight="medium"
         fontSize="20px"
         lineHeight="normal"
@@ -63,8 +56,6 @@ const DescriptionSection = () => {
         TECH TALKS / WORKSHOPS / FUN ACTIVITIES/ SCHWAGS/ PRIZES
       </Text>
       <Text
-        fontFamily="Rubik"
-        fontStyle="normal"
         fontWeight="medium"
         fontSize="16px"
         lineHeight="normal"
@@ -73,7 +64,7 @@ const DescriptionSection = () => {
         AND/ A / WHOLE/LOT/ MORE . . .
       </Text>
     </Stack>
-  )
-}
+  );
+};
 
-export default DescriptionSection
+export default DescriptionSection;

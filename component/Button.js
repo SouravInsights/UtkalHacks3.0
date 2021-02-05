@@ -5,7 +5,6 @@ const Button = ({ label, rightIcon, withIcon, ...props }) => {
     return (
         <HStack
             spacing="16px"
-            fontFamily="Rubik"
             as="button"
             outline="none"
             lineHeight="1"

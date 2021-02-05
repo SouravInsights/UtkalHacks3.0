@@ -89,7 +89,6 @@ export default function Home({ sponsors }) {
         {/*      <Wikisection />
         */}
         <Heading
-          fontFamily="Rubik"
           fontWeight="black"
           fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
           color="#252222"

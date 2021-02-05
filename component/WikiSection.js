@@ -6,14 +6,12 @@ const WikiSection = () => {
       <Box align="center">
         <Text
           fontSize="4xl"
-          fontFamily="Rubik"
           fontWeight="black"
           letterSpacing="wide"
         >
           Our Wiki
         </Text>
         <Text
-          fontStyle="Rubik"
           fontSize={["lg", "lg", "xl", "22px"]}
           fontWeight="normal"
           color="gray.600"

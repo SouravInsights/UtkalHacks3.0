@@ -1,6 +1,7 @@
-import React from "react"
-import { ChakraProvider, theme } from "@chakra-ui/react"
-import Fonts from "../styles/Fonts"
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "../styles/theme";
+import { Fonts } from "../styles/Fonts";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Fonts />
       <Component {...pageProps} />
     </ChakraProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

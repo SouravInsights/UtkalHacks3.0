@@ -10,7 +10,6 @@ const Section = ({ heading, description, children, center, ...props }) => {
     return (
         <Stack spacing="20px" {...props}>
             <Heading
-                fontFamily="Rubik"
                 fontWeight="black"
                 fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
                 color="#252222"
@@ -21,7 +20,6 @@ const Section = ({ heading, description, children, center, ...props }) => {
             </Heading>
             <Text
                 as="p"
-                fontFamily="Rubik"
                 fontWeight="normal"
                 fontSize={["xl", "xl", "2xl", "2xl", "2xl"]}
                 color="454954"

@@ -24,7 +24,6 @@ const SprintSection = () => {
           something that no one never wanted."
         >
           <Heading
-            fontFamily="Rubik Mono One"
             fontWeight="bold"
             fontSize={["xl", "xl", "xl", "xl", "xl"]}
             color="#252222"

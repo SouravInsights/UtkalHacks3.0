@@ -10,7 +10,6 @@ const AboutCard = ({ children, header, body, coverImage, ...props }) => {
             <Box py="24px" px="20px" >
                 <Box
                     as="h1"
-                    fontFamily="Rubik"
                     fontStyle="normal"
                     fontWeight="extrabold"
                     fontSize={["2xl", "2xl", "2xl", "2xl", "2xl"]}
@@ -21,7 +20,6 @@ const AboutCard = ({ children, header, body, coverImage, ...props }) => {
 
                 <Box
                     as="p"
-                    fontFamily="Rubik"
                     fontWeight="normal"
                     fontSize={["xl", "xl", "xl", "xl", "xl"]}
                     color="454954"
