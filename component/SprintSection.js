@@ -15,10 +15,7 @@ const SprintSection = () => {
       gap={["16px", "16px", "24px", "32px", "40px"]}
       my={["72px", "72px", "72px", "80px", "80px"]}
     >
-      <GridItem
-        colSpan={["1", "6", "6", "4", "4"]}
-
-      >
+      <GridItem colSpan={["1", "6", "6", "4", "4"]}>
         <Section
           heading="Design Sprint to the Rescue!"
           description="Hackathons are great, until they are not! With unguided, unclear
@@ -50,9 +47,7 @@ const SprintSection = () => {
         <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205684/UtkalHacks%203.0/DSP4_ieytm6.webp" />
       </GridItem>
 
-      <GridItem
-        colSpan={["1", "3", "3", "2", "2"]}
-      >
+      <GridItem colSpan={["1", "3", "3", "2", "2"]}>
         <Image src="https://res.cloudinary.com/emishalabs/image/upload/q_50/v1612205701/UtkalHacks%203.0/DSP3_dyd0u6.webp" />
       </GridItem>
     </Grid>

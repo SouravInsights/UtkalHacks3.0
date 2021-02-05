@@ -5,8 +5,6 @@ const DescriptionSection = () => {
   return (
     <Stack justifyContent="center" textAlign="center" my="60px">
       <Heading
-        fontFamily="Rubik"
-        fontStyle="normal"
         fontWeight="black"
         fontSize={["180px", "180px", "180px", "220px", "220px"]}
         lineHeight="normal"
