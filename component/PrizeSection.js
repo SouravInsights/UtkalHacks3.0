@@ -1,5 +1,7 @@
 import React from "react"
-import { Heading, Box, Text, Stack } from "@chakra-ui/react"
+import { Heading, Box, Text, Stack, Flex } from "@chakra-ui/react"
+import PrizeCard from "./Card/PrizeCard"
+import Button from "./Button"
 
 const PrizeSection = () => {
   return (
@@ -25,6 +27,36 @@ const PrizeSection = () => {
           cool but useful ones in this year’s edition.
         </Text>
       </Stack>
+      <Stack
+        spacing={["20px", "30px", "30px", "40px", "50px"]}
+        direction={["row", "row", "row", "row", "row"]}
+        my="40px"
+        justifyContent="space-around"
+        overflowX="auto"
+      >
+        <PrizeCard
+          to="https://threejs-journey.xyz/"
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
+          heading="Three.js Journey"
+          description="Have you ever wanted to create stunning 3D websites?
+          Whether you are a beginner or a more advanced developer,
+          Three.js Journey is the only course you need to learn WebGL with Three.js."
+        />
+        {/* <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549847/UtkalHacks%203.0/cover_1_lquepn.webp"
+          heading="Typescript Book"
+          description="Everything you need to know about TypeScript in 50 short lessons! Find errors before they happen, and strengthen your code base by leveraging TypeScript's vast and flexible type system."
+        /> */}
+        <PrizeCard
+          to="https://egghead.io/"
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549833/UtkalHacks%203.0/cover_anklnh.webp"
+          heading="Egghead"
+          description="Learn the best JavaScript tools and frameworks from industry pros. Egghead provides you with the resources you need to craft a developer portfolio to get a good/better job as a web developer."
+        />
+      </Stack>
+      <Box align="center" my="40px">
+        <Button label="Checkout all Prizes" />
+      </Box>
     </Box>
   )
 }

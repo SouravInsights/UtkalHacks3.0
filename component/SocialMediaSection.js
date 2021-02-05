@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Box, Icon, Text, VStack, Stack } from "@chakra-ui/react"
+import { Flex, Box, Icon, Text, VStack, Stack, Link } from "@chakra-ui/react"
 import { FaDiscord, FaTwitter } from "react-icons/fa"
 import Button from "./Button"
 
@@ -16,11 +16,15 @@ const SocialMediaSection = () => {
       alignItems="center"
     >
       <VStack spacing={4} justifyContent="center" alignItems="center">
-        <Icon
-          as={FaDiscord}
-          color="#ffffff"
-          boxSize={["4em", "4em", "5em", "6em"]}
-        />
+        <Link href="https://discord.gg/BHJnCwGr" isExternal>
+          <Icon
+            as={FaDiscord}
+            color="#ffffff"
+            boxSize={["4em", "4em", "5em", "6em"]}
+            href="https://discord.gg/BHJnCwGr"
+            isExternal
+          />
+        </Link>
         <Text
           textAlign="center"
           fontSize={["lg", "xl", "2xl", "3xl"]}
@@ -31,14 +35,19 @@ const SocialMediaSection = () => {
         >
           Start the Conversation
         </Text>
-        <Button label=" Join our Discord" />
+        <Link href="https://discord.gg/BHJnCwGr" isExternal>
+          <Button label="Start the Conversation" />
+        </Link>
       </VStack>
       <VStack spacing={4} justifyContent="center" alignItems="center">
-        <Icon
-          as={FaTwitter}
-          boxSize={["4em", "4em", "5em", "6em"]}
-          color="#ffffff"
-        />
+        <Link href="https://twitter.com/emishacommunity" isExternal>
+          <Icon
+            as={FaTwitter}
+            boxSize={["4em", "4em", "5em", "6em"]}
+            color="#ffffff"
+          />
+        </Link>
+
         <Text
           textAlign="center"
           fontSize={["lg", "xl", "2xl", "3xl"]}
@@ -49,7 +58,9 @@ const SocialMediaSection = () => {
         >
           Don't miss any updates!
         </Text>
-        <Button label="Follow us on Twitter" />
+        <Link href="https://twitter.com/emishacommunity" isExternal>
+          <Button label="Follow us on Twitter" />
+        </Link>
       </VStack>
     </Stack>
   )

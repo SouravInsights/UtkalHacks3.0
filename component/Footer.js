@@ -1,6 +1,6 @@
 import React from "react"
-import { Text, Icon, Box, VStack, HStack } from "@chakra-ui/react"
-import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa"
+import { Text, Icon, VStack, HStack, Link } from "@chakra-ui/react"
+import { FaFacebook, FaInstagram, FaGithub, FaMedium } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -32,9 +32,23 @@ const Footer = () => {
         Come hack with us!
       </Text>
       <HStack spacing={4}>
-        <Icon as={FaFacebook} boxSize="2em" color="#ffffff" />
-        <Icon as={FaInstagram} boxSize="2em" color="#ffffff" />
-        <Icon as={FaGithub} boxSize="2em" color="#ffffff" />
+        <Link href="https://www.facebook.com/emishacommunity" isExternal>
+          <Icon
+            as={FaFacebook}
+            boxSize="2em"
+            color="#ffffff"
+            href="https://www.facebook.com/emishacommunity"
+          />
+        </Link>
+        <Link href="https://www.instagram.com/emishacommunity/" isExternal>
+          <Icon as={FaInstagram} boxSize="2em" color="#ffffff" />
+        </Link>
+        <Link href="https://github.com/EmishaCommunity" isExternal>
+          <Icon as={FaGithub} boxSize="2em" color="#ffffff" />
+        </Link>
+        <Link href="https://medium.com/emishacommunity" isExternal>
+          <Icon as={FaMedium} boxSize="2em" color="#ffffff" />
+        </Link>
       </HStack>
     </VStack>
   )
