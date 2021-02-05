@@ -31,7 +31,7 @@ const PrizeSection = () => {
         spacing={["20px", "30px", "30px", "40px", "50px"]}
         direction={["row", "row", "row", "row", "row"]}
         my="40px"
-        justifyContent="space-around"
+        justifyContent={["flex-start", "flex-start", "space-around", "space-around", "space-around"]}
         overflowX="auto"
       >
         <PrizeCard
