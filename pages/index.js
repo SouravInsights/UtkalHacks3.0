@@ -15,6 +15,7 @@ import PrizeSection from "../component/PrizeSection.js"
 import SocialMediaSection from "../component/SocialMediaSection"
 import Footer from "../component/Footer"
 import Badge from "../component/Badge/Badge"
+import PresentSponsor from "../component/PresentSponsor"
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -87,6 +88,7 @@ export default function Home({ sponsors }) {
         <PrizeSection />
         {/*      <Wikisection />
          */}
+        <PresentSponsor />
         <Heading
           fontWeight="black"
           fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
