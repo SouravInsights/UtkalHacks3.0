@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, SimpleGrid, Heading, Image, Flex, Link } from "@chakra-ui/react"
+import { Box, SimpleGrid, Heading, Image, Flex, Link, Divider, Stack  } from "@chakra-ui/react"
 
 function PresentSponsor() {
   return (
@@ -14,7 +14,8 @@ function PresentSponsor() {
         Our Sponsors
       </Heading>
       <Flex direction="column">
-        <Heading
+        <Stack direction="row" alignItems="center" spacing={["5", "8", "8", "8"]} >
+         <Heading
           fontWeight="normal"
           fontSize={["2xl", "2xl", "4xl", "4xl", "4xl"]}
           color="#252222"
@@ -24,15 +25,18 @@ function PresentSponsor() {
         >
           Diamond
         </Heading>
-        <hr />
+        <Divider orientation="horizontal" />
+        </Stack >
+        
         <Box py="20px">
-          <Link href="https://spline.design/" isExternal align="center">
+          <Link href="https://spline.design/" isExternal>
             <Image
               src="https://res.cloudinary.com/emishalabs/image/upload/q_92/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
               boxSize={["100px", "100px", "200px", "200px", "250px"]}
             />
           </Link>
         </Box>
+        <Stack direction="row" alignItems="center" spacing={["5", "8", "8", "8"]} >
         <Heading
           fontWeight="normal"
           fontSize={["2xl", "2xl", "4xl", "4xl", "4xl"]}
@@ -43,13 +47,16 @@ function PresentSponsor() {
         >
           Platinum
         </Heading>
-        <hr />
-        <Link href="https://devfolio.co/" isExternal align="center" py="20px">
+        <Divider orientation="horizontal" />
+        </Stack>
+        <Link href="https://devfolio.co/" isExternal py="20px">
           <Image
-            src="https://res.cloudinary.com/emishalabs/image/upload/q_88/v1612891243/UtkalHacks%203.0/Devfolio_-_Normal_2x_tkexpg.webp"
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1612958316/UtkalHacks%203.0/Devfolio-Logo.webp"
             w={["300px", "300px", "500px", "500px", "500px"]}
           />
         </Link>
+
+        <Stack direction="row" alignItems="center" spacing={["5", "8", "8", "8"]} >
         <Heading
           fontWeight="normal"
           fontSize={["2xl", "2xl", "4xl", "4xl", "4xl"]}
@@ -60,7 +67,9 @@ function PresentSponsor() {
         >
           Gold
         </Heading>
-        <hr />
+        <Divider orientation="horizontal" colorScheme="blue" />
+        </Stack >
+
         <SimpleGrid columns={2} py="20px" placeItems="center">
           <Box>
             <Link href="https://graphcms.com" isExternal>
@@ -68,6 +77,7 @@ function PresentSponsor() {
             </Link>
           </Box>
         </SimpleGrid>
+        <Stack direction="row" alignItems="center" spacing={["5", "8", "8", "8"]} >
         <Heading
           fontWeight="normal"
           fontSize={["2xl", "2xl", "4xl", "4xl", "4xl"]}
@@ -78,7 +88,8 @@ function PresentSponsor() {
         >
           Silver
         </Heading>
-        <hr />
+        <Divider orientation="horizontal" /><hr />
+        </Stack>
         <SimpleGrid columns={3} py="20px" placeItems="center" gap={10}>
           <Box>
             <Link href="https://nhost.io/" isExternal>
@@ -96,6 +107,7 @@ function PresentSponsor() {
             </Link>
           </Box>
         </SimpleGrid>
+        <Stack  direction="row" alignItems="center" >
         <Heading
           fontWeight="normal"
           fontSize={["2xl", "2xl", "4xl", "4xl", "4xl"]}
@@ -106,7 +118,8 @@ function PresentSponsor() {
         >
           Educational Partner
         </Heading>
-        <hr />
+        <Divider  orientation="horizontal" />
+        </Stack>
         <SimpleGrid columns={2} py="20px" placeItems="center">
           <Box>
             <Link href="https://egghead.io/" isExternal>
