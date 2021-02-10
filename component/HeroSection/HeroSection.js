@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react"
 import { FaPen } from 'react-icons/fa';
 import Button from "../Button"
+import DevfolioButton from "../DevfolioButton"
 
 const HeroSection = () => {
   return (
@@ -35,12 +36,8 @@ const HeroSection = () => {
           5th March - 20th March
         </Text>
 
-        <Button
-          withIcon
-          mb={["-25px", "-25px", "-25px", "-25px", "-25px"]}
-          label=" Apply with Devfolio"
-          rightIcon={<FaPen />}
-        />
+       
+        <DevfolioButton />
       </Stack>
     </Box >
 
