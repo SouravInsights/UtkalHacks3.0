@@ -3,13 +3,14 @@ import { Box, SimpleGrid, Heading, Image, Flex, Link, Divider, Stack } from "@ch
 
 function PastSponsor() {
     return (
-        <Box my="80px">
+        <Box my="50px">
             <Heading
                 fontWeight="black"
                 fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
                 color="#252222"
                 letterSpacing="wide"
                 textAlign="center"
+                mb="30px"
             >
                 Our Past Sponsors
             </Heading>
@@ -17,51 +18,51 @@ function PastSponsor() {
             <SimpleGrid columns={["2", "2", "3", "3", "3"]} placeItems="center" gap={10}>
 
                 <Link href="https://github.com/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613058549/UtkalHacks%203.0/GitHub_Logo_sour5l.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613058549/UtkalHacks%203.0/GitHub_Logo_sour5l.png" />
                 </Link>
 
                 <Link href="https://devfolio.co/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1612958316/UtkalHacks%203.0/Devfolio-Logo.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1612958316/UtkalHacks%203.0/Devfolio-Logo.png" />
                 </Link>
 
                 <Link href="https://startupodisha.gov.in/" isExternal>
-                    <Image w={["200px", "300px", "300px", "300px"]} src="https://res.cloudinary.com/emishalabs/image/upload/v1613059765/UtkalHacks%203.0/StartupOdisha_u12av1.png" />
+                    <Image p="20px" w={["200px", "300px", "300px", "300px"]} src="https://res.cloudinary.com/emishalabs/image/upload/v1613059765/UtkalHacks%203.0/StartupOdisha_u12av1.png" />
                 </Link>
 
                 <Link href="https://www.pratilipi.com/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613065708/UtkalHacks%203.0/logo_welskm.webp" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613065708/UtkalHacks%203.0/logo_welskm.webp" />
                 </Link>
 
                 <Link href="https://www.elastic.co/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613059766/UtkalHacks%203.0/logo-elastic-horizontal-color_vpalax.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613059766/UtkalHacks%203.0/logo-elastic-horizontal-color_vpalax.png" />
                 </Link>
 
                 <Link href="https://clarisights.com/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613067009/UtkalHacks%203.0/clarisights_zzomxf.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613067009/UtkalHacks%203.0/clarisights_zzomxf.png" />
                 </Link>
 
                 <Link href="https://www.cloudflare.com/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613059724/UtkalHacks%203.0/Cloudflare_kw78uc.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613070866/UtkalHacks%203.0/cf-logo-v-rgb_nqkwde.png" />
                 </Link>
 
                 <Link href="https://matic.network/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.png" />
                 </Link>
 
                 <Link href="https://transak.com/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613059788/UtkalHacks%203.0/logo_tf1jbp.png " />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613059788/UtkalHacks%203.0/logo_tf1jbp.png " />
                 </Link>
 
                 <Link href="https://www.blockstack.org/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613065442/UtkalHacks%203.0/blockstack_nxngqf.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613065442/UtkalHacks%203.0/blockstack_nxngqf.png" />
                 </Link>
 
                 <Link href="https://status.im/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613065003/UtkalHacks%203.0/Status-full-logo-lockup_ahc2pi.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613065003/UtkalHacks%203.0/Status-full-logo-lockup_ahc2pi.png" />
                 </Link>
 
                 <Link href="https://3box.io/" isExternal>
-                    <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1613059745/UtkalHacks%203.0/3box_m0ytj0.png" />
+                    <Image p="20px" src="https://res.cloudinary.com/emishalabs/image/upload/v1613059745/UtkalHacks%203.0/3box_m0ytj0.png" />
                 </Link>
 
                 {/*  <Link href="https://bhubaneswar.tie.org/" isExternal>

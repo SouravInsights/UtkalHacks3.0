@@ -20,7 +20,7 @@ function WhySection({ heading, description, coverImage, reverse }) {
       <Flex
         justifyContent={["center", "center", "space-around", "flex-end", "flex-end"]}
       >
-        <Image w={["100%", "100%", "80%", "auto", "auto"]} src={coverImage} />
+        <Image w={["100%", "100%", "80%", "80%", "70%"]} src={coverImage} />
       </Flex>
     </SimpleGrid>
 
