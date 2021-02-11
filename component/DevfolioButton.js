@@ -20,6 +20,7 @@ const DevfolioButton = (props) => {
             data-hackathon-slug="utkalhacks2021"
             data-button-theme="dark"
             style={{ height: "50px", width: "312px" }}
+
             {...props}
         ></div>
     )
