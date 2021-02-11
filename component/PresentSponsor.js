@@ -27,7 +27,7 @@ function PresentSponsor() {
         </Heading>
           <Box bg="#70d1f4" h="2px" w="100%" />
         </Stack >
-        <SimpleGrid columns={["1", "1", "1", "1", "1"]} py="20px" justifyItems="center" alignItems="center" >
+        <SimpleGrid columns={["1", "1", "2", "2", "2"]} placeItems={["center", "center", "normal", "normal"]} >
           <Link href="https://spline.design/" isExternal>
             <Image
               src="https://res.cloudinary.com/emishalabs/image/upload/q_92/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
@@ -48,7 +48,7 @@ function PresentSponsor() {
           <Box bg="#c7c7c7" h="2px" w="100%" />
         </Stack>
         <SimpleGrid columns={["1", "1", "2", "2", "2"]} py="20px" placeItems="center">
-          <Link href="https://devfolio.co/" isExternal py="20px">
+          <Link href="https://devfolio.co/" isExternal >
             <Image
               src="https://res.cloudinary.com/emishalabs/image/upload/v1612958316/UtkalHacks%203.0/Devfolio-Logo.webp"
               w={["300px", "300px", "500px", "500px", "500px"]}

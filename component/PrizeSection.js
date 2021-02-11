@@ -9,7 +9,7 @@ const PrizeSection = () => {
       <Stack spacing="20px" direction="column">
         <Heading
           fontWeight="black"
-          fontSize={["2xl", "2xl", "4xl", "4xl"]}
+          fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
           color="#252222"
         >
           Did we forget Prizes?

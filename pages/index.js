@@ -16,37 +16,10 @@ import SocialMediaSection from "../component/SocialMediaSection"
 import Footer from "../component/Footer"
 import Badge from "../component/Badge/Badge"
 import PresentSponsor from "../component/PresentSponsor"
+import PastSponsor from "../component/PastSponsor"
 
-export async function getStaticProps() {
-  const graphcms = new GraphQLClient(
-    "https://api-ap-northeast-1.graphcms.com/v2/ckh5adtt3ablq01z92dom8ylv/master"
-  )
 
-  const { sponsors } = await graphcms.request(
-    `
-  {
-    sponsors {
-      tier
-      company {
-        name
-        website
-        logo {
-          url
-        }
-      }
-    }
-  }
-  `
-  )
-  return {
-    props: {
-      sponsors,
-    },
-    revalidate: 1,
-  }
-}
-
-export default function Home({ sponsors }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -89,29 +62,7 @@ export default function Home({ sponsors }) {
         {/*      <Wikisection />
          */}
         <PresentSponsor />
-        <Heading
-          fontWeight="black"
-          fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
-          color="#252222"
-          letterSpacing="wide"
-          textAlign="center"
-        >
-          Our Past Sponsors
-        </Heading>
-        {/* Sponsor section starts */}
-        <Grid
-          alignItems="center"
-          placeItems="center"
-          templateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)"]}
-          gap={10}
-          my="40px"
-        >
-          {sponsors.map((sponsor) => (
-            <Box maxW={["100%", "100%", "90%", "80%"]}>
-              <Image src={sponsor.company.logo.url} />
-            </Box>
-          ))}
-        </Grid>
+        <PastSponsor />
         {/* Sponsor section ends */}
         <FAQ />
       </Box>
