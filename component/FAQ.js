@@ -88,7 +88,6 @@ const Faq = ({ question, answer }) => {
     <Accordion allowToggle onClick={toggleOpen}>
       <AccordionItem >
         <AccordionButton
-          border="5px"
           _focus={{ boxShadow: "none" }}
           _hover={{ bg: "#F3E352" }}
           justifyContent="space-between"
