@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react";
 import {
   Flex,
   Box,
@@ -8,7 +8,11 @@ import {
   AccordionPanel,
   AccordionIcon,
   Heading,
+  Text
 } from "@chakra-ui/react"
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+
+const AccordionPanelWrapper = motion.custom(AccordionPanel);
 
 const Faqdata = [
   {
@@ -22,13 +26,7 @@ const Faqdata = [
     question: "How the registration process works?",
     answer:
       "Unlike all other hackathons, our registration process will be slightly different. But the entire process is very simple, just go to top and hit that Apply With Devfolio button. That's it. Then you will be prompted to make a quick submission of the questionnaires within the Devfolio platform.",
-    /*  - What is the pain or problem that you're trying to solve?
-    - Who's affected by the pain or problem? ( It's good to get some real data from the affected people. )
-    - Does this problem have a tendency to grow and why?
-    - How you're going to approach the problem?
-    - Do you have a team? If yes, then who are the team members?
-    - Do you have any plans to continue building the project even after the hackathon? If yes, then what's your vision for future?
-    Read more: https://wiki.utkalhacks.tech/how-it-works/registration-process */
+
   },
   {
     id: 3,
@@ -80,46 +78,67 @@ const Faqdata = [
   },
 ]
 
-const Faqitems = ({ question, answer }) => {
+const Faq = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen(!isOpen);
+
   return (
-    <Box borderWidth="2px">
-      <Accordion allowToggle>
-        <AccordionItem>
-          <AccordionButton
-            border="5px"
-            _hover={{ bg: "#F3E352" }}
-            justifyContent="space-between"
+
+    <Accordion allowToggle onClick={toggleOpen} _focus={{ boxShadow: "none" }}>
+      <AccordionItem _focus={{ boxShadow: "none" }}>
+        <AccordionButton
+          border="5px"
+          boxShadow="outline"
+          outline="none"
+          _hover={{ bg: "#F3E352" }}
+          justifyContent="space-between"
+        >
+          <Box
+            flex="1"
+            fontSize={["lg", "xl", "xl", "xl"]}
+            fontWeight="semibold"
+            textAlign="left"
           >
-            <Box fontSize={["lg", "xl", "2xl", "2xl"]} textAlign="center">
-              {question}
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-          <AccordionPanel pb={4} fontSize={["sm", "md", "lg", "xl"]}>
-            {answer}
-          </AccordionPanel>
-        </AccordionItem>
-      </Accordion>
-    </Box>
+            {question}
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+        <AnimatePresence>
+          {isOpen &&
+            <AccordionPanelWrapper
+              _focus={{ boxShadow: "none" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 2 }}
+              exit={{ opacity: 0 }}
+              pb={4}
+              fontSize={["sm", "md", "lg", "xl"]}
+            >
+              {answer}
+            </AccordionPanelWrapper>
+          }</AnimatePresence>
+      </AccordionItem>
+    </Accordion>
+
   )
 }
 
-const FAQ = () => {
+const FAQSection = () => {
   return (
     <Flex
       direction="column"
-      mx={["10px", "40px", "60px", "200px"]}
+      mx={["10px", "40px", "60px", "100px"]}
       my="60px"
-      borderColor="burlywood"
     >
       <Heading size="2xl" fontFamily="Rubik" textAlign="center" m="30px">
         FAQ
       </Heading>
+
       {Faqdata.map((data) => (
-        <Faqitems key={data.id} question={data.question} answer={data.answer} />
+        <Faq key={data.id} question={data.question} answer={data.answer} />
       ))}
     </Flex>
   )
 }
 
-export default FAQ
+export default FAQSection
