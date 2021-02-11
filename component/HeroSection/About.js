@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Box, Text, Stack } from "@chakra-ui/react"
+import { Box, Text, Stack } from "@chakra-ui/react"
 import Aboutcard from "../Card/Aboutcard"
 import Section from "../Section"
 

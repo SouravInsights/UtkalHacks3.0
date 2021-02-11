@@ -113,7 +113,7 @@ export default function Home({ sponsors }) {
           ))}
         </Grid>
         {/* Sponsor section ends */}
-        {/* <FAQ /> */}
+        <FAQ />
       </Box>
       <SocialMediaSection />
       <Footer />
