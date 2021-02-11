@@ -35,8 +35,6 @@ const HeroSection = () => {
         >
           5th March - 20th March
         </Text>
-
-       
         <DevfolioButton />
       </Stack>
     </Box >

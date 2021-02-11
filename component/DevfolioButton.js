@@ -15,11 +15,11 @@ const DevfolioButton = (props) => {
     }, []);
 
     return (
-        <div 
-            className="apply-button" 
-            data-hackathon-slug="utkalhacks3" 
+        <div
+            className="apply-button"
+            data-hackathon-slug="utkalhacks2021"
             data-button-theme="dark"
-            style={{height: "50px", width: "312px"}}
+            style={{ height: "50px", width: "312px" }}
             {...props}
         ></div>
     )
