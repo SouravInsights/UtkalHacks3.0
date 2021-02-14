@@ -2,7 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
 import NavBar from "../component/Navbar/Header"
-import { Box, Image, Heading, Grid } from "@chakra-ui/react"
+import { Box, Image, Heading, Grid, Flex } from "@chakra-ui/react"
 import HeroSection from "../component/HeroSection/HeroSection.js"
 import WikiSection from "../component/WikiSection"
 import FAQ from "../component/FAQ.js"
@@ -17,9 +17,32 @@ import Footer from "../component/Footer"
 import Badge from "../component/Badge/Badge"
 import PresentSponsor from "../component/PresentSponsor"
 import PastSponsor from "../component/PastSponsor"
+import FAQSection from "../component/FAQ.js"
 
+export async function getStaticProps() {
+  const graphcms = new GraphQLClient(
+    "https://api-ap-northeast-1.graphcms.com/v2/ckh5adtt3ablq01z92dom8ylv/master"
+  )
 
-export default function Home() {
+  const { faqs } = await graphcms.request(
+    `
+    {
+      faqs {
+        question
+        answer
+      }
+    }
+    `
+  )
+  return {
+    props: {
+      faqs,
+    },
+    revalidate: 1,
+  }
+}
+
+export default function Home({ faqs }) {
   return (
     <>
       <Head>
@@ -64,7 +87,19 @@ export default function Home() {
         <PresentSponsor />
         <PastSponsor />
         {/* Sponsor section ends */}
-        <FAQ />
+        <Flex
+          direction="column"
+          mx={["10px", "40px", "60px", "100px"]}
+          my="60px"
+        >
+          <Heading size="2xl" fontFamily="Rubik" textAlign="center" m="30px">
+            FAQ
+          </Heading>
+
+          {faqs.map((data) => (
+            <FAQ key={data.id} question={data.question} answer={data.answer} />
+          ))}
+        </Flex>
       </Box>
       <SocialMediaSection />
       <Footer />
