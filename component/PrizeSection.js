@@ -99,6 +99,7 @@ const PrizeSection = () => {
           heading="Best GraphCMS Hacks"
           data={[" Swags from GraphCMS"]}
         />
+        {/* 
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
           heading="Best Matic Hacks"
@@ -106,7 +107,7 @@ const PrizeSection = () => {
             " Subscriptions of Three.js Journey",
             "Coupon codes from Spline",
             "3 months subscription of Nhost",
-            /* "Access to FigmaAcademy ", */
+            "Access to FigmaAcademy ", 
             "1 year subscripton of egghead courses",
           ]}
         />
@@ -121,7 +122,7 @@ const PrizeSection = () => {
             "1 year subscripton of egghead courses",
           ]}
         />
-
+ */}
         {/*  <PrizeCard
           to="https://threejs-journey.xyz/"
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
