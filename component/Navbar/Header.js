@@ -10,16 +10,12 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo
-
-        color={["white", "white", "primary.500", "primary.500"]}
-      />
+      <Logo color={["white", "white", "primary.500", "primary.500"]} />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
   )
 }
-
 
 const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +78,7 @@ const MenuLinks = ({ isOpen }) => {
       >
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/schedule">Schedule </MenuItem>
-        <MenuItem to="/prizes">Prizes </MenuItem>
+        {/* <MenuItem to="/">Prizes </MenuItem> */}
         <MenuItem to="/">Challenges </MenuItem>
       </Stack>
     </Box>
@@ -111,11 +107,9 @@ const NavBarContainer = ({ children, ...props }) => {
             }} */
       {...props}
     >
-      { children}
-    </Flex >
+      {children}
+    </Flex>
   )
 }
-
-
 
 export default NavBar

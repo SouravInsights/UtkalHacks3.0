@@ -30,14 +30,15 @@ const PrizeSection = () => {
       <Flex
         direction={["column", "column", "row", "row", "row"]}
         justifyContent="space-around"
+        mt="30px"
       >
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp"
           heading="Winners"
           data={[
             "Cash Prize Rs.30000",
-            "Swags from Graphcms",
-            "1 year subscripton of egghead courses",
+            "Swags from GraphCMS",
+            "1 year subscripton of Egghead for team",
             "Subscription of Three.js for each members",
           ]}
         />
@@ -46,8 +47,8 @@ const PrizeSection = () => {
           heading="Runner up"
           data={[
             "Cash Prize Rs.20000",
-            "Swags from Graphcms",
-            "1 year subscripton of egghead courses",
+            "Swags from GraphCMS",
+            "1 year subscripton of Egghead courses",
             "Subscription of Three.js for each members",
           ]}
         />
@@ -57,30 +58,89 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
           heading="Best Design team"
           data={[
-            "Swags from Graphcms",
-            "1 year subscripton of egghead courses",
-            "Subscription of Three.js for each members",
+            " Subscriptions of Three.js Journey",
+            "Coupon codes from Spline",
+            "3 months subscription of Nhost",
+            /* "Access to FigmaAcademy ", */
+            "1 year subscripton of Egghead courses",
           ]}
         />
         <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
+          heading="Best Girls team"
+          data={[
+            "Swags from GitHub",
+            " Subscriptions of Three.js Journey",
+            "3 months subscription of Nhost",
+            "1 year subscripton of Egghead courses",
+          ]}
+        />
+        <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
+          heading="Best Beginners team"
+          data={[
+            " Subscriptions of Three.js Journey",
+            "Coupon codes from Spline",
+            "3 months subscription of Nhost",
+            "1 year subscripton of Egghead courses ",
+          ]}
+        />
+        <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
+          heading="Best Spline 3D design"
+          data={[
+            " 1st prize of $400",
+            "2nd prize of $300",
+            "3rd prize of $200",
+          ]}
+        />
+        <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
+          heading="Best GraphCMS Hacks"
+          data={[" Swags from GraphCMS"]}
+        />
+        <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
+          heading="Best Matic Hacks"
+          data={[
+            " Subscriptions of Three.js Journey",
+            "Coupon codes from Spline",
+            "3 months subscription of Nhost",
+            /* "Access to FigmaAcademy ", */
+            "1 year subscripton of egghead courses",
+          ]}
+        />
+        <PrizeCard
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612892691/UtkalHacks%203.0/Tezos_iwio1d.webp"
+          heading="Best Tezos Hacks"
+          data={[
+            " Subscriptions of Three.js Journey",
+            "Coupon codes from Spline",
+            "3 months subscription of Nhost",
+            "Access to FigmaAcademy ",
+            "1 year subscripton of egghead courses",
+          ]}
+        />
+
+        {/*  <PrizeCard
           to="https://threejs-journey.xyz/"
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
           heading="Three.js Journey"
           description="Have you ever wanted to create stunning 3D websites?
                        Whether you are a beginner or a more advanced developer,
                       Three.js Journey is the only course you need to learn WebGL with Three.js."
-        />
+        /> */}
         {/* <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549847/UtkalHacks%203.0/cover_1_lquepn.webp"
           heading="Typescript Book"
           description="Everything you need to know about TypeScript in 50 short lessons! Find errors before they happen, and strengthen your code base by leveraging TypeScript's vast and flexible type system."
         /> */}
-        <PrizeCard
+        {/* <PrizeCard
           to="https://egghead.io/"
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549833/UtkalHacks%203.0/cover_anklnh.webp"
           heading="Egghead"
           description="Learn the best JavaScript tools and frameworks from industry pros. Egghead provides you with the resources you need to craft a developer portfolio to get a good/better job as a web developer."
-        />
+        /> */}
       </SimpleGrid>
 
       {/*  <Box align="center" my="40px">
