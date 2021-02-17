@@ -19,10 +19,10 @@ const PrizeCard = ({ CoverImage, heading, description, data = [], to }) => {
         maxW="350px"
         minH="380px"
         p="16px"
-        border="1px solid #252222"
+        border="3px solid #252222"
         my="20px"
       >
-        <Image src={CoverImage} />
+        <Image src={CoverImage} h="100px" />
         <Heading fontSize="24px" fontWeight="bold" textAlign="center" py="16px">
           {heading}
         </Heading>
