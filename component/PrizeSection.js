@@ -98,7 +98,7 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
           heading="Best GraphCMS Hacks"
           data={[" Swags from GraphCMS"]}
-        />
+        />{/* 
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
           heading="Best Matic Hacks"
@@ -121,7 +121,7 @@ const PrizeSection = () => {
             "1 year subscripton of egghead courses",
           ]}
         />
-
+ */}
         {/*  <PrizeCard
           to="https://threejs-journey.xyz/"
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
