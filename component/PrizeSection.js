@@ -36,7 +36,7 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp"
           heading="Winners"
           data={[
-            "Cash Prize Rs.30000",
+            "Prizes worth Rs.30000",
             "Swags from GraphCMS",
             "1 year subscripton of Egghead for team",
             "Subscription of Three.js for each members",
@@ -46,7 +46,7 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_92,w_120/v1613533923/UtkalHacks%203.0/trophy_2_1_nbngun.webp"
           heading="Runner up"
           data={[
-            "Cash Prize Rs.20000",
+            "Prizes worth Rs.20000",
             "Swags from GraphCMS",
             "1 year subscripton of Egghead courses",
             "Subscription of Three.js for each members",
@@ -99,30 +99,23 @@ const PrizeSection = () => {
           heading="Best GraphCMS Hacks"
           data={[" Swags from GraphCMS"]}
         />
-        {/* 
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
           heading="Best Matic Hacks"
           data={[
-            " Subscriptions of Three.js Journey",
-            "Coupon codes from Spline",
-            "3 months subscription of Nhost",
-            "Access to FigmaAcademy ", 
-            "1 year subscripton of egghead courses",
+            " Rs.15000 for best Hack using Matic",
+            "Eligibility for Internship/Full-time interviews",
+            "Rs.10000 for best Hack using Ethereum",
           ]}
         />
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612892691/UtkalHacks%203.0/Tezos_iwio1d.webp"
           heading="Best Tezos Hacks"
           data={[
-            " Subscriptions of Three.js Journey",
-            "Coupon codes from Spline",
-            "3 months subscription of Nhost",
-            "Access to FigmaAcademy ",
-            "1 year subscripton of egghead courses",
+            " Rs.20000 for best Dapp built on Tezos",
+            "Continuity grant opportunity for exceptional builders",
           ]}
         />
- */}
         {/*  <PrizeCard
           to="https://threejs-journey.xyz/"
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
