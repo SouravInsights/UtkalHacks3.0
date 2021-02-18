@@ -53,6 +53,12 @@ function PresentSponsor() {
             w={["300px", "300px", "500px", "500px", "500px"]}
           />
         </Link>
+<Link href="https://graphcms.com" isExternal>
+          <Image
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
+            w={["300px", "300px", "500px", "500px", "500px"]}
+          />
+        </Link>
       </SimpleGrid>
 
       {/* Gold Tier Start */}
@@ -67,12 +73,7 @@ function PresentSponsor() {
         <Box bg="#feb631" h="2px" w="100%" />
       </Stack >
       <SimpleGrid columns={["1", "1", "2", "2", "2"]} py="20px" placeItems="center">
-        <Link href="https://graphcms.com" isExternal>
-          <Image
-            src="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
-            w={["300px", "300px", "500px", "500px", "500px"]}
-          />
-        </Link>
+        
       </SimpleGrid>
 
       {/* Silver Tier Start */}
