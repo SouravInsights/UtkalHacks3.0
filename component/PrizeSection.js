@@ -36,22 +36,22 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp"
           heading="Winners"
           data={[
-            "Prizes worth Rs.30000",
+            "Prizes worth ₹30,000",
             "6 months professional plan of GraphCMS",
-            "Swag kits from GraphCMS for each member",
-            "1 year subscripton of Egghead for team",
-            "Subscription of Three.js journey for each members",
+            "Swag kit from GraphCMS for each member",
+            "1 year subscripton of Egghead for the team",
+            "Subscription of Three.js Journey for each member",
           ]}
         />
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_92,w_120/v1613533923/UtkalHacks%203.0/trophy_2_1_nbngun.webp"
-          heading="Runner up"
+          heading="Runner's up"
           data={[
-            "Prizes worth Rs.20000",
+            "Prizes worth ₹20,000",
             "3 months professional plan of GraphCMS",
-            "Swag kits from GraphCMS for each member",
-            "1 year subscripton of Egghead for team",
-            "Subscription of Three.js journey for each members",
+            "Swag kit from GraphCMS for each member",
+            "1 year subscripton of Egghead for the team",
+            "Subscription of Three.js Journey for each member",
           ]}
         />
       </Flex>
@@ -61,10 +61,10 @@ const PrizeSection = () => {
           heading="Best Design team"
           data={[
             " Subscriptions of Three.js Journey",
-            "Coupon codes from Spline",
+            " Pro accounts from Spline",
             "3 months subscription of Nhost",
             /* "Access to FigmaAcademy ", */
-            "1 year subscripton of Egghead for team",
+            "1 year subscripton of Egghead for the team",
           ]}
         />
         <PrizeCard
@@ -74,7 +74,7 @@ const PrizeSection = () => {
             "Swags from GitHub",
             " Subscriptions of Three.js Journey",
             "3 months subscription of Nhost",
-            "1 year subscripton of Egghead for team",
+            "1 year subscripton of Egghead for the team",
           ]}
         />
         <PrizeCard
@@ -82,13 +82,13 @@ const PrizeSection = () => {
           heading="Best Beginners team"
           data={[
             " Subscriptions of Three.js Journey",
-            "Coupon codes from Spline",
+            "Pro accounts from Spline",
             "3 months subscription of Nhost",
-            "1 year subscripton of Egghead for team ",
+            "1 year subscripton of Egghead for the team ",
           ]}
         />
         <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,w_140/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.png"
           heading="Best Spline 3D design"
           data={[
             "1st prize of $400 from Spline",
@@ -108,16 +108,16 @@ const PrizeSection = () => {
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
           heading="Best Matic Hacks"
           data={[
-            " Rs.15000 for best Hack using Matic",
+            "₹15,000 for best Hack using Matic",
             "Eligibility for Internship/Full-time interviews",
-            "Rs.10000 for best Hack using Ethereum",
+            "₹10,000 for best Hack using Ethereum",
           ]}
         />
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612892691/UtkalHacks%203.0/Tezos_iwio1d.webp"
           heading="Best Tezos Hacks"
           data={[
-            " Rs.20000 for best Dapp built on Tezos",
+            " ₹20,000 for best Dapp built on Tezos",
             "Continuity grant opportunity for exceptional builders",
           ]}
         />
