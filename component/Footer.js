@@ -37,7 +37,6 @@ const Footer = () => {
             as={FaFacebook}
             boxSize="2em"
             color="#ffffff"
-            href="https://www.facebook.com/emishacommunity"
           />
         </Link>
         <Link href="https://www.instagram.com/emishacommunity/" isExternal>

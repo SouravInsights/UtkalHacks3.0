@@ -14,7 +14,7 @@ const Section = ({ heading, description, children, center, ...props }) => {
                 fontSize={["3xl", "3xl", "4xl", "4xl", "4xl"]}
                 color="#252222"
                 letterSpacing="wide"
-                textAlign={center === "true" ? "center" : "none"}
+                textAlign={center ? "center" : "none"}
             >
                 {heading}
             </Heading>
