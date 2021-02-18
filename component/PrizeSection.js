@@ -37,9 +37,10 @@ const PrizeSection = () => {
           heading="Winners"
           data={[
             "Prizes worth Rs.30000",
-            "Swags from GraphCMS",
+            "6 months professional plan of GraphCMS",
+            "Swag kits from GraphCMS for each member",
             "1 year subscripton of Egghead for team",
-            "Subscription of Three.js for each members",
+            "Subscription of Three.js journey for each members",
           ]}
         />
         <PrizeCard
@@ -47,9 +48,10 @@ const PrizeSection = () => {
           heading="Runner up"
           data={[
             "Prizes worth Rs.20000",
-            "Swags from GraphCMS",
-            "1 year subscripton of Egghead courses",
-            "Subscription of Three.js for each members",
+            "3 months professional plan of GraphCMS",
+            "Swag kits from GraphCMS for each member",
+            "1 year subscripton of Egghead for team",
+            "Subscription of Three.js journey for each members",
           ]}
         />
       </Flex>
@@ -62,7 +64,7 @@ const PrizeSection = () => {
             "Coupon codes from Spline",
             "3 months subscription of Nhost",
             /* "Access to FigmaAcademy ", */
-            "1 year subscripton of Egghead courses",
+            "1 year subscripton of Egghead for team",
           ]}
         />
         <PrizeCard
@@ -72,7 +74,7 @@ const PrizeSection = () => {
             "Swags from GitHub",
             " Subscriptions of Three.js Journey",
             "3 months subscription of Nhost",
-            "1 year subscripton of Egghead courses",
+            "1 year subscripton of Egghead for team",
           ]}
         />
         <PrizeCard
@@ -82,22 +84,25 @@ const PrizeSection = () => {
             " Subscriptions of Three.js Journey",
             "Coupon codes from Spline",
             "3 months subscription of Nhost",
-            "1 year subscripton of Egghead courses ",
+            "1 year subscripton of Egghead for team ",
           ]}
         />
         <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
+          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,w_140/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
           heading="Best Spline 3D design"
           data={[
-            " 1st prize of $400",
-            "2nd prize of $300",
-            "3rd prize of $200",
+            "1st prize of $400 from Spline",
+            "2nd prize of $300 from Spline",
+            "3rd prize of $200 from Spline",
           ]}
         />
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
           heading="Best GraphCMS Hacks"
-          data={[" Swags from GraphCMS"]}
+          data={[
+            " Swag kits from GraphCMS",
+            "Collab content with GraphCMS(Stream/Post/Guide)",
+          ]}
         />
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
