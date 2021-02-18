@@ -33,23 +33,36 @@ const SpeakerCard = ({ profilePic, name, title, company, linkedin, github, twitt
           </Text>
         </VStack>
         <HStack mt="20px" justifyContent="center" alignContent="center">
-            <Link href={linkedin} isExternal>
-                <Icon as={FaLinkedin} boxSize="1.5em" color="#000000" />
-            </Link>
-            <Link href={twitter} isExternal>
-                <Icon as={FaTwitter} boxSize="1.5em" color="#000000" />
-            </Link>
-            <Link href={github} isExternal>
-                <Icon as={FaGithub} boxSize="1.5em" color="#000000" />
-            </Link>
-            {dribbble === null ? null : 
-            <Link href={dribbble} isExternal>
-                <Icon as={FaDribbble} boxSize="1.5em" color="#000000" />
-            </Link>}
-            
-            <Link href={website} isExternal>
-                <Icon as={FaGlobe} boxSize="1.5em" color="#000000" />
-            </Link>
+            { linkedin ? 
+              <Link href={linkedin} isExternal>
+                  <Icon as={FaLinkedin} boxSize="1.5em" color="#000000" />
+              </Link>
+              : null 
+            }
+            { twitter ? 
+              <Link href={twitter} isExternal>
+                  <Icon as={FaTwitter} boxSize="1.5em" color="#000000" />
+              </Link>
+              : null 
+            }
+            { github ? 
+              <Link href={github} isExternal>
+                  <Icon as={FaGithub} boxSize="1.5em" color="#000000" />
+              </Link>
+              : null 
+            }
+            { dribbble ? 
+              <Link href={dribbble} isExternal>
+                  <Icon as={FaDribbble} boxSize="1.5em" color="#000000" />
+              </Link>
+              : null
+            }
+            { website ?
+              <Link href={website} isExternal>
+                  <Icon as={FaGlobe} boxSize="1.5em" color="#000000" />
+              </Link>
+              : null 
+            }
         </HStack>   
       </Flex>
  

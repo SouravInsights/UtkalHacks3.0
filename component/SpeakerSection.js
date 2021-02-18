@@ -11,6 +11,7 @@ const speakersData = [
         company: "Omio",
         profilepic: "https://vilvaathiban.com/intro.jpg",
         linkedin: "https://linkedin.com/in/vilvaathiban",
+        
         github: "https://github.com/vilvaathibanpb",
         twitter: "https://twitter.com/vilvaathibanpb",
         website: "https://vilvaathiban.com"
@@ -42,6 +43,7 @@ const speakersData = [
         title: "Developer Experience Engineer",
         company: "GraphCMS",
         profilepic: "https://pbs.twimg.com/profile_images/1353655926943870976/bz18ljyJ_400x400.jpg",
+      
         linkedin: "https://linkedin.com/in/notrab",
         github: "https://github.com/notrab",
         twitter: "https://twitter.com/notrab",
