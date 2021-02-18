@@ -29,8 +29,8 @@ function PresentSponsor() {
       <SimpleGrid columns={["1", "1", "2", "2", "2"]} placeItems="center" >
         <Link href="https://spline.design/" isExternal>
           <Image
-            src="https://res.cloudinary.com/emishalabs/image/upload/q_92/v1612849588/UtkalHacks%203.0/spline_logo_jdvyns.webp"
-            w={["150px", "150px", "200px", "200px", "250px"]}
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.png"
+
           />
         </Link>
       </ SimpleGrid>

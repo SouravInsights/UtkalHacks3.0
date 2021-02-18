@@ -16,8 +16,7 @@ const PrizeCard = ({ CoverImage, heading, description, data = [], to }) => {
   return (
     <Link href={to} _hover={{ outline: "none" }} isExternal>
       <VStack
-        minW="350px"
-        maxW="350px"
+        maxW="330px"
         minH="380px"
         p="20px"
         border="1px  #252222"
