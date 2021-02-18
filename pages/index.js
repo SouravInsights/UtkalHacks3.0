@@ -17,6 +17,7 @@ import Footer from "../component/Footer"
 import Badge from "../component/Badge/Badge"
 import PresentSponsor from "../component/PresentSponsor"
 import PastSponsor from "../component/PastSponsor"
+import SpeakerSection from "../component/SpeakerSection"
 import FAQSection from "../component/FAQ.js"
 
 export async function getStaticProps() {
@@ -82,8 +83,9 @@ export default function Home({ faqs }) {
         />
 
         <PrizeSection />
-        {/*      <Wikisection />
+        {/*  <Wikisection />
          */}
+         <SpeakerSection />
         <PresentSponsor />
         <PastSponsor />
         {/* Sponsor section ends */}
