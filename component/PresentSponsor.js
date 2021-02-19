@@ -53,6 +53,7 @@ function PresentSponsor() {
             w={["300px", "300px", "500px", "500px", "500px"]}
           />
         </Link>
+
         <Link href="https://devfolio.co/" isExternal >
           <Image
             src="https://res.cloudinary.com/emishalabs/image/upload/v1612958316/UtkalHacks%203.0/Devfolio-Logo.webp"
