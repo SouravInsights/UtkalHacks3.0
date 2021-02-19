@@ -90,22 +90,19 @@ const NavBarContainer = ({ children, ...props }) => {
     <Flex
       zIndex="2"
       boxShadow="xl"
-      position="sticky"
-      top="0px"
+      position={["sticky", "sticky", "sticky", "sticky", "sticky"]}
+      top="25px"
+      left="0"
+      right="0"
+      mx="auto"
       as="nav"
       align="center"
       justify="space-between"
       wrap="wrap"
-      mx="auto"
-      w="100%"
-      px={14}
-      py={5}
+      w="90%"
+      px={[6, 8, 10, 12, 14]}
+      py={[3, 4, 4, 4, 4]}
       bg="#ffffff"
-      /*       backdropFilter="blur(10px)"
-            style={{
-              background: "linear-gradient(90.13deg, rgba(255, 255, 255, 0.5) 1.38%, rgba(199, 199, 190, 0.385417) 53.39%, rgba(255, 255, 255, 0) 99.28%)",
-            }} */
-      {...props}
     >
       {children}
     </Flex>

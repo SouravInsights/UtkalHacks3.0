@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, Icon, VStack, HStack, Link } from "@chakra-ui/react"
+import { Text, Icon, VStack, HStack, Link, Image } from "@chakra-ui/react"
 import { FaFacebook, FaInstagram, FaGithub, FaMedium } from "react-icons/fa"
 
 const Footer = () => {
@@ -32,21 +32,25 @@ const Footer = () => {
         Come hack with us!
       </Text>
       <HStack spacing={4}>
-        <Link href="https://www.facebook.com/emishacommunity" isExternal>
+        <Link _focus={{ boxShadow: "none" }} href="https://www.facebook.com/emishacommunity" isExternal>
           <Icon
             as={FaFacebook}
             boxSize="2em"
             color="#ffffff"
+
           />
         </Link>
-        <Link href="https://www.instagram.com/emishacommunity/" isExternal>
+        <Link _focus={{ boxShadow: "none" }} href="https://www.instagram.com/emishacommunity/" isExternal>
           <Icon as={FaInstagram} boxSize="2em" color="#ffffff" />
         </Link>
-        <Link href="https://github.com/EmishaCommunity" isExternal>
+        <Link _focus={{ boxShadow: "none" }} href="https://github.com/EmishaCommunity" isExternal>
           <Icon as={FaGithub} boxSize="2em" color="#ffffff" />
         </Link>
-        <Link href="https://medium.com/emishacommunity" isExternal>
+        <Link _focus={{ boxShadow: "none" }} href="https://medium.com/emishacommunity" isExternal>
           <Icon as={FaMedium} boxSize="2em" color="#ffffff" />
+        </Link>
+        <Link _focus={{ boxShadow: "none" }} href="https://emisha.community/" isExternal>
+          <Image boxSize="2em" src="https://res.cloudinary.com/emishalabs/image/upload/v1613738987/UtkalHacks%203.0/Emisha-Icon2_e9h9ng.svg" />
         </Link>
       </HStack>
     </VStack>

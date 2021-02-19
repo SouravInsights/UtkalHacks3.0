@@ -74,7 +74,7 @@ function PresentSponsor() {
         <Box bg="#feb631" h="2px" w="100%" />
       </Stack >
       <SimpleGrid columns={["1", "1", "2", "2", "2"]} py="20px" placeItems="center">
-        
+
       </SimpleGrid>
 
       {/* Silver Tier Start */}

@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
 import NavBar from "../component/Navbar/Header"
+/* import { NavHeader } from "../component/Navbar/NavHeader" */
 import { Box, Image, Heading, Grid, Flex } from "@chakra-ui/react"
 import HeroSection from "../component/HeroSection/HeroSection.js"
 import WikiSection from "../component/WikiSection"
@@ -49,7 +50,8 @@ export default function Home({ faqs }) {
       <Head>
         <title>UtkalHacks 3.0</title>
       </Head>
-      <Badge />
+
+      {/* <Badge /> */}
       <NavBar />
       <HeroSection />
       <Box px={["20px", "30px", "50px", "65px", "80px"]}>
@@ -85,7 +87,7 @@ export default function Home({ faqs }) {
         <PrizeSection />
         {/*  <Wikisection />
          */}
-         <SpeakerSection />
+        <SpeakerSection />
         <PresentSponsor />
         <PastSponsor />
         {/* Sponsor section ends */}

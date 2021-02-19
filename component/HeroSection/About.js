@@ -5,7 +5,7 @@ import Section from "../Section"
 
 const About = () => {
   return (
-    <Box mt={["60px", "60px", "80px", "80px", "80px"]}>
+    <Box mt={["-100px", "-130px", "-140px", "-140px", "-140px"]}>
       {/* Why online hackthon is better? section starts here */}
       <Section
         heading="Hack From Home"
@@ -16,7 +16,7 @@ const About = () => {
       <Stack
         spacing="15px"
         mt="30px"
-        direction={["column", "column", "column", "row"]}
+        direction={["column", "column", "column", "row", "row"]}
         overflow="auto"
       >
         <Aboutcard
