@@ -47,9 +47,9 @@ const MenuToggle = ({ toggle, isOpen }) => {
   )
 }
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const MenuItem = ({ children, isLast, isExternal, to = "/", ...rest }) => {
   return (
-    <Link href={to}>
+    <Link href={to} isExternal={isExternal ? isExternal : null}>
       <Text
         display="block"
         fontSize={"lg"}
@@ -76,10 +76,10 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/schedule">Schedule </MenuItem>
+        <MenuItem isExternal to="https://www.notion.so/utkalhacks/UtkalHacks-Schedule-feee511dc8c8405a9bc4759b69154ead">Schedule</MenuItem>
         {/* <MenuItem to="/">Prizes </MenuItem> */}
-        <MenuItem to="/">Challenges </MenuItem>
+        <MenuItem isExternal to="https://www.notion.so/utkalhacks/UtkalHacks-Mini-Challenges-384e736650044e00bd90fa8bdf8ecfa1">Challenges</MenuItem>
+        <MenuItem isExternal to="https://www.notion.so/utkalhacks/UtkalHacks-Ideas-Vault-cead37d84a4744f38121d19b6bc8afaa">Ideas</MenuItem>
       </Stack>
     </Box>
   )

@@ -13,7 +13,7 @@ const SprintSection = () => {
         "repeat(6, 1fr)",
       ]}
       gap={["16px", "16px", "24px", "32px", "40px"]}
-      my={["72px", "72px", "72px", "80px", "80px"]}
+      my={["72px", "72px", "72px", "80px", "120px"]}
     >
       <GridItem colSpan={["1", "6", "6", "4", "4"]}>
         <Section
