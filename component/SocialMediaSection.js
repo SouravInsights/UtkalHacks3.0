@@ -36,7 +36,7 @@ const SocialMediaSection = () => {
           Start the Conversation
         </Text>
         <Link href="https://discord.gg/hWBpPhXDJd" isExternal>
-          <Button label="Start the Conversation" />
+          <Button label="Join our Discord" />
         </Link>
       </VStack>
       <VStack spacing={4} justifyContent="center" alignItems="center">
