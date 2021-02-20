@@ -1,6 +1,8 @@
 import React from "react"
 import {
   Flex,
+  Stack,
+  Box,
   Image,
   SimpleGrid,
 } from "@chakra-ui/react"
@@ -9,22 +11,22 @@ import NextImage from "next/image";
 
 function WhySection({ heading, description, coverImage, reverse }) {
   return (
-
-    <SimpleGrid
-      spacing={10}
-      my="32px"
-      spacing={["24px", "24px", "32px", "32px", "40px"]}
-      columns={{ base: 1, lg: 2 }}
+    <Stack
+      direction={["column", "column", "column", reverse ? "row-reverse" : "row", reverse ? "row-reverse" : "row"]}
+      justifyContent="space-between"
+      my={["40px", "60px", "80px", "80px", "80px"]}
+      spacing={["12px", "12px", "26px", "26px", "26px"]}
     >
+      <Box>
+        <Image src={coverImage} />
+      </Box>
+
       <Section heading={heading} description={description} />
-      <Flex
-        justifyContent={["center", "center", "space-around", "flex-end", "flex-end"]}
-      >
-        <Image w={["100%", "100%", "80%", "80%", "70%"]} src={coverImage} />
-      </Flex>
-    </SimpleGrid>
+
+    </Stack>
 
   )
 }
 
 export default WhySection
+

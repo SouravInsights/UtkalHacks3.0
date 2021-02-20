@@ -27,11 +27,7 @@ const PrizeSection = () => {
           cool but useful ones in this year’s edition.
         </Text>
       </Stack>
-      <Flex
-        direction={["column", "column", "row", "row", "row"]}
-        justifyContent="space-around"
-        mt="30px"
-      >
+      <SimpleGrid gap={4} columns={["1", "2", "2", "2", "2"]} placeItems="center">
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp"
           heading="Winners"
@@ -54,8 +50,8 @@ const PrizeSection = () => {
             "Subscription of Three.js Journey for each member",
           ]}
         />
-      </Flex>
-      <SimpleGrid columns={["1", "2", "2", "3", "3"]} placeItems="center">
+      </SimpleGrid>
+      <SimpleGrid gap={4} columns={["1", "2", "2", "3", "3"]} placeItems="center">
         <PrizeCard
           CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
           heading="Best Design team"

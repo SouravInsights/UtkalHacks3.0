@@ -11,17 +11,22 @@ import {
   Box,
 } from "@chakra-ui/react"
 import { MdCheckCircle } from "react-icons/md"
+import { motion } from 'framer-motion';
+
+const PrizeCardWrapper = motion.custom(VStack);
 
 const PrizeCard = ({ CoverImage, heading, description, data = [], to }) => {
   return (
     <Link href={to} _hover={{ outline: "none" }} isExternal>
-      <VStack
+      <PrizeCardWrapper
         maxW="330px"
         minH="380px"
         p="20px"
         border="1px  #252222"
         boxShadow="lg"
         my="20px"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 1.1 }}
       >
         <Box>
           <Image src={CoverImage} />
@@ -40,7 +45,7 @@ const PrizeCard = ({ CoverImage, heading, description, data = [], to }) => {
             </ListItem>
           ))}
         </List>
-      </VStack>
+      </PrizeCardWrapper>
     </Link>
   )
 }

@@ -54,52 +54,7 @@ const theme = extendTheme({
     wider: "0.05em",
     widest: "0.1em",
   },
-  colors: {
-    black: "#000000",
-    gray: {
-      50: "#181818",
-      100: "#736969",
-      150: "#151515",
-      200: "#999999",
-      250: "#202020",
-    },
-    offwhite: {
-      50: "#D2D2D2",
-    },
-    yellow: {
-      50: "#FFCC00",
-      100: "#A3F76A",
-    },
-    green: {
-      50: "#A3F76A",
-    },
-    cyan: {
-      50: "#00b8ea",
-      100: "#0059aa",
-    },
-    blue: {
-      50: "#0E39D0",
-      100: "#3182CE",
-    },
-    primary: {
-      100: "#E5FCF1",
-      200: "#27EF96",
-      300: "#10DE82",
-      400: "#0EBE6F",
-      500: "#0CA25F",
-      600: "#0A864F",
-      700: "#086F42",
-      800: "#075C37",
-      900: "#064C2E",
-    },
-  },
-  backgroundColor: {
-    transparent: "transparent",
-    black: {
-      50: "#343131",
-    },
-    white: "#ffffff",
-  },
+
   space: {
     px: "1px",
     0: "0",
