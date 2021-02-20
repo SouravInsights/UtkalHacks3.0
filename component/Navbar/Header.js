@@ -80,6 +80,7 @@ const MenuLinks = ({ isOpen }) => {
         {/* <MenuItem to="/">Prizes </MenuItem> */}
         <MenuItem isExternal to="https://www.notion.so/utkalhacks/UtkalHacks-Mini-Challenges-384e736650044e00bd90fa8bdf8ecfa1">Challenges</MenuItem>
         <MenuItem isExternal to="https://www.notion.so/utkalhacks/UtkalHacks-Ideas-Vault-cead37d84a4744f38121d19b6bc8afaa">Ideas</MenuItem>
+        <MenuItem isExternal to="https://wiki.utkalhacks.tech">Wiki</MenuItem>
       </Stack>
     </Box>
   )
