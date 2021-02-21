@@ -16,6 +16,7 @@ function WhySection({ heading, description, coverImage, reverse }) {
       justifyContent="space-between"
       my={["40px", "60px", "80px", "80px", "80px"]}
       spacing={["12px", "12px", "26px", "26px", "26px"]}
+      alignItems="center"
     >
       <Box>
         <Image src={coverImage} />
