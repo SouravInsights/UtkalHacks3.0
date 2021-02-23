@@ -148,9 +148,9 @@ function PresentSponsor() {
         <Box bg="#f86ca1" h="2px" w="100%" />
       </Stack>
 
-      <SimpleGrid columns={["1", "1", "3", "3", "3"]} gap={10} placeItems="center">
+      <SimpleGrid columns={["1", "1", "3", "3", "3"]} gap={10} >
         <Link _focus={{ boxShadow: "none" }} href="https://hackon.tech/" isExternal>
-          <Image src="https://res.cloudinary.com/emishalabs/image/upload/v1614073560/UtkalHacks%203.0/Hackon2.0-logo.webp" />
+          <Image w={["200px", "200px", "300px", "300px", "300px"]} src="https://res.cloudinary.com/emishalabs/image/upload/v1614073560/UtkalHacks%203.0/Hackon2.0-logo.webp" />
         </Link>
       </SimpleGrid>
     </Box>
