@@ -29,7 +29,7 @@ function PresentSponsor() {
       <SimpleGrid columns={["1", "1", "2", "2", "2"]} placeItems="center" >
         <Link _focus={{ boxShadow: "none" }} href="https://spline.design/" isExternal>
           <Image
-            src="https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.png"
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.webp"
 
           />
         </Link>
@@ -106,7 +106,7 @@ function PresentSponsor() {
 
         <Link _focus={{ boxShadow: "none" }} href="https://matic.network/" isExternal>
           <Image
-            src="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.svg"
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
             w={["200px", "200px", "300px", "300px", "300px"]}
           />
         </Link>
