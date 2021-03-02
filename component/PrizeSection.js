@@ -3,6 +3,292 @@ import { Heading, Box, Text, Stack, Flex, SimpleGrid } from "@chakra-ui/react"
 import PrizeCard from "./Card/PrizeCard"
 import Button from "./Button"
 
+
+const prizeCardData = [
+  {
+    id: 1,
+    heading: "Winner",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "Worth Gadgets",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/30_000_v8oiwk.png"
+      },
+      {
+        id: 2,
+        title: "GraphCMS T-shirt",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
+      },
+      {
+        id: 3,
+        title: "GraphCMS Tote Bag",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672990/UtkalHacks%203.0/bag_qw5m43.png"
+      },
+      {
+        id: 4,
+        title: "GraphCMS MUG",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672998/UtkalHacks%203.0/Mug_xlbryb.png"
+      },
+      {
+        id: 5,
+        title: "GraphCMS Pillow",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614673003/UtkalHacks%203.0/Pillow_xixihc.png"
+      },
+      {
+        id: 6,
+        title: "GraphCMS Snapback",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
+      },
+      {
+        id: 7,
+        title: "6 months professional plan",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
+      },
+      {
+        id: 8,
+        title: "1 year subscripton for the team",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
+      },
+      {
+        id: 9,
+        title: "Subscription for each member",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
+      },
+    ]
+  },
+  {
+    id: 2,
+    heading: "Runner Up",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_92,w_120/v1613533923/UtkalHacks%203.0/trophy_2_1_nbngun.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "Worth Gadgets",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+      },
+      {
+        id: 2,
+        title: "GraphCMS T-shirt",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
+      },
+      {
+        id: 3,
+        title: "GraphCMS Tote Bag",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672990/UtkalHacks%203.0/bag_qw5m43.png"
+      },
+      {
+        id: 4,
+        title: "GraphCMS MUG",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672998/UtkalHacks%203.0/Mug_xlbryb.png"
+      },
+      {
+        id: 5,
+        title: "GraphCMS Pillow",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614673003/UtkalHacks%203.0/Pillow_xixihc.png"
+      },
+      {
+        id: 6,
+        title: "GraphCMS Snapback",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
+      },
+      {
+        id: 7,
+        title: "6 months professional plan",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
+      },
+      {
+        id: 8,
+        title: "1 year subscripton for the team",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
+      },
+      {
+        id: 9,
+        title: "Subscription for each member",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
+      },
+
+    ]
+  },
+  {
+    id: 3,
+    heading: "Best Design Team",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "Subscription for each member",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+      },
+      {
+        id: 2,
+        title: "Pro accounts",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614689741/UtkalHacks%203.0/spline_logo_black_rlj6ds.png"
+      },
+      {
+        id: 3,
+        title: "3 months subscription",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614693133/UtkalHacks%203.0/Nhost_tnmlnh.png"
+      },
+      {
+        id: 4,
+        title: "1 year subscripton for the team",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
+      },
+    ]
+  },
+  {
+    id: 4,
+    heading: "Best Girls team",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "Subscription for each member",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+      },
+      {
+        id: 2,
+        title: "3 months subscription",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614693133/UtkalHacks%203.0/Nhost_tnmlnh.png"
+      },
+      {
+        id: 3,
+        title: "1 year subscripton for the team",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
+      },
+    ]
+  },
+  {
+    id: 5,
+    heading: "Best Beginners team",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "Subscription for each member",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+      },
+      {
+        id: 2,
+        title: "Pro accounts",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614689741/UtkalHacks%203.0/spline_logo_black_rlj6ds.png"
+      },
+      {
+        id: 3,
+        title: "3 months subscription",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614693133/UtkalHacks%203.0/Nhost_tnmlnh.png"
+      },
+      {
+        id: 4,
+        title: "1 year subscripton for the team",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
+      },
+    ]
+  },
+  {
+    id: 6,
+    heading: "Best Spline 3D design",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.png",
+    prizesData: [
+      {
+        id: 1,
+        title: "1st prize",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614694306/UtkalHacks%203.0/400_tuvk7q.png"
+      },
+      {
+        id: 2,
+        title: "2nd prize",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614694327/UtkalHacks%203.0/300_y6qvsc.png"
+      },
+      {
+        id: 3,
+        title: "3rd prize",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614694321/UtkalHacks%203.0/200_vfni67.png"
+      },
+    ]
+  },
+  {
+    id: 7,
+    heading: "Best GraphCMS Hacks",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "GraphCMS T-shirt",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
+      },
+      {
+        id: 2,
+        title: "GraphCMS Tote Bag",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672990/UtkalHacks%203.0/bag_qw5m43.png"
+      },
+      {
+        id: 3,
+        title: "GraphCMS MUG",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672998/UtkalHacks%203.0/Mug_xlbryb.png"
+      },
+      {
+        id: 4,
+        title: "GraphCMS Pillow",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614673003/UtkalHacks%203.0/Pillow_xixihc.png"
+      },
+      {
+        id: 5,
+        title: "GraphCMS Snapback",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
+      },
+      {
+        id: 6,
+        title: "Collab content with GraphCMS(Stream/Post/Guide)",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
+      },
+    ]
+  },
+  {
+    id: 8,
+    heading: "Best Matic Hacks",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp",
+    prizesData: [
+      {
+        id: 1,
+        title: "for best Hack using Matic",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/15000_pcopit.png"
+      },
+      {
+        id: 2,
+        title: "Eligibility for Internship/Full-time interviews",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614697740/UtkalHacks%203.0/Matic_g4rmkr.png"
+      },
+      {
+        id: 3,
+        title: "for best Hack using Ethereum",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/10000_z2usvr.png"
+      },
+
+    ]
+  },
+  {
+    id: 9,
+    heading: "Best Tezos Hacks",
+    prizeIcon: "https://res.cloudinary.com/emishalabs/image/upload/v1612892691/UtkalHacks%203.0/Tezos_iwio1d.png",
+    prizesData: [
+      {
+        id: 1,
+        title: "for best Dapp built on Tezos",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+      },
+      {
+        id: 2,
+        title: "Continuity grant opportunity for exceptional builders",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614698239/UtkalHacks%203.0/Tezos_gaozs3.png"
+      },
+
+    ]
+  },
+]
+
+
 const PrizeSection = () => {
   return (
     <Box my="80px">
@@ -27,116 +313,17 @@ const PrizeSection = () => {
           cool but useful ones in this year’s edition.
         </Text>
       </Stack>
-      <SimpleGrid gap={4} columns={["1", "2", "2", "2", "2"]} placeItems="center">
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,q_89,w_120/v1613534060/UtkalHacks%203.0/trophy_1_2_sp15je.webp"
-          heading="Winners"
-          data={[
-            "Prizes worth ₹30,000",
-            "6 months professional plan of GraphCMS",
-            "Swag kit from GraphCMS for each member",
-            "1 year subscripton of Egghead for the team",
-            "Subscription of Three.js Journey for each member",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_92,w_120/v1613533923/UtkalHacks%203.0/trophy_2_1_nbngun.webp"
-          heading="Runner's up"
-          data={[
-            "Prizes worth ₹20,000",
-            "3 months professional plan of GraphCMS",
-            "Swag kit from GraphCMS for each member",
-            "1 year subscripton of Egghead for the team",
-            "Subscription of Three.js Journey for each member",
-          ]}
-        />
-      </SimpleGrid>
-      <SimpleGrid gap={4} columns={["1", "2", "2", "3", "3"]} placeItems="center">
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
-          heading="Best Design team"
-          data={[
-            " Subscriptions of Three.js Journey",
-            " Pro accounts from Spline",
-            "3 months subscription of Nhost",
-            /* "Access to FigmaAcademy ", */
-            "1 year subscripton of Egghead for the team",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
-          heading="Best Girls team"
-          data={[
-            "Swags from GitHub",
-            " Subscriptions of Three.js Journey",
-            "3 months subscription of Nhost",
-            "1 year subscripton of Egghead for the team",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/c_scale,h_100,q_90,w_120/v1613533927/UtkalHacks%203.0/trophy_3_1_w0yuui.webp"
-          heading="Best Beginners team"
-          data={[
-            " Subscriptions of Three.js Journey",
-            "Pro accounts from Spline",
-            "3 months subscription of Nhost",
-            "1 year subscripton of Egghead for the team ",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613670061/UtkalHacks%203.0/spline_logo_black_xj1yzz.png"
-          heading="Best Spline 3D design"
-          data={[
-            "1st prize of $400 from Spline",
-            "2nd prize of $300 from Spline",
-            "3rd prize of $200 from Spline",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613043913/UtkalHacks%203.0/GraphCMS_Logo.webp"
-          heading="Best GraphCMS Hacks"
-          data={[
-            " Swag kits from GraphCMS",
-            "Collab content with GraphCMS(Stream/Post/Guide)",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
-          heading="Best Matic Hacks"
-          data={[
-            "₹15,000 for best Hack using Matic",
-            "Eligibility for Internship/Full-time interviews",
-            "₹10,000 for best Hack using Ethereum",
-          ]}
-        />
-        <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612892691/UtkalHacks%203.0/Tezos_iwio1d.webp"
-          heading="Best Tezos Hacks"
-          data={[
-            " ₹20,000 for best Dapp built on Tezos",
-            "Continuity grant opportunity for exceptional builders",
-          ]}
-        />
-        {/*  <PrizeCard
-          to="https://threejs-journey.xyz/"
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/q_91/v1612549874/UtkalHacks%203.0/cover_2_ugjej7.webp"
-          heading="Three.js Journey"
-          description="Have you ever wanted to create stunning 3D websites?
-                       Whether you are a beginner or a more advanced developer,
-                      Three.js Journey is the only course you need to learn WebGL with Three.js."
-        /> */}
-        {/* <PrizeCard
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549847/UtkalHacks%203.0/cover_1_lquepn.webp"
-          heading="Typescript Book"
-          description="Everything you need to know about TypeScript in 50 short lessons! Find errors before they happen, and strengthen your code base by leveraging TypeScript's vast and flexible type system."
-        /> */}
-        {/* <PrizeCard
-          to="https://egghead.io/"
-          CoverImage="https://res.cloudinary.com/emishalabs/image/upload/v1612549833/UtkalHacks%203.0/cover_anklnh.webp"
-          heading="Egghead"
-          description="Learn the best JavaScript tools and frameworks from industry pros. Egghead provides you with the resources you need to craft a developer portfolio to get a good/better job as a web developer."
-        /> */}
-      </SimpleGrid>
+      <Flex my="40px" mr="-20px" direction="row" wrap="wrap" justifyContent="space-around">
+        {prizeCardData.map((data) => (
+          <PrizeCard
+            key={data.id}
+            heading={data.heading}
+            prizeIcon={data.prizeIcon}
+            prizesData={data.prizesData}
+          />
+        ))}
+      </Flex>
+
 
       {/*  <Box align="center" my="40px">
         <Button label="Checkout all Prizes" />
