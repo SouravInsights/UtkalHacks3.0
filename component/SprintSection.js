@@ -1,5 +1,5 @@
 import React from "react"
-import { Stack, Heading, Text, Image, Grid, GridItem } from "@chakra-ui/react"
+import { Heading, Image, Grid, GridItem } from "@chakra-ui/react"
 import Section from "./Section"
 
 const SprintSection = () => {
