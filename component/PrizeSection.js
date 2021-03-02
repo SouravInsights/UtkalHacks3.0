@@ -144,16 +144,26 @@ const prizeCardData = [
     prizesData: [
       {
         id: 1,
+        title: "Invertocat 2.0 Shirt",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614707113/UtkalHacks%203.0/Invertocat_2.0_Mock_GithubShop-M1_480x480_crop_center_uuabxk.jpg"
+      },
+      {
+        id: 2,
+        title: "Octocat Figurine",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614707118/UtkalHacks%203.0/Small_Octocat_480x480_crop_center_tbhv3p.png"
+      },
+      {
+        id: 3,
         title: "Subscription for each member",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
       },
       {
-        id: 2,
+        id: 4,
         title: "3 months subscription",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614693133/UtkalHacks%203.0/Nhost_tnmlnh.png"
       },
       {
-        id: 3,
+        id: 5,
         title: "1 year subscripton for the team",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
       },
