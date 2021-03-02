@@ -13,7 +13,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Worth Gadgets",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/30_000_v8oiwk.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614710235/UtkalHacks%203.0/30000_u49uvl.png"
       },
       {
         id: 2,
@@ -65,7 +65,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Worth Gadgets",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621712/UtkalHacks%203.0/20_000_lcybiw.png"
       },
       {
         id: 2,
@@ -263,7 +263,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "for best Hack using Matic",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/15000_pcopit.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621710/UtkalHacks%203.0/15_000_j6su23.png"
       },
       {
         id: 2,
@@ -273,7 +273,7 @@ const prizeCardData = [
       {
         id: 3,
         title: "for best Hack using Ethereum",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/10000_z2usvr.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621713/UtkalHacks%203.0/10000_kfjiam.png"
       },
 
     ]
@@ -286,7 +286,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "for best Dapp built on Tezos",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621712/UtkalHacks%203.0/20_000_lcybiw.png"
       },
       {
         id: 2,
