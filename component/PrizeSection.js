@@ -13,7 +13,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Worth Gadgets",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/30_000_v8oiwk.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614710235/UtkalHacks%203.0/30000_u49uvl.png"
       },
       {
         id: 2,
@@ -65,7 +65,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Worth Gadgets",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621712/UtkalHacks%203.0/20_000_lcybiw.png"
       },
       {
         id: 2,
@@ -144,16 +144,26 @@ const prizeCardData = [
     prizesData: [
       {
         id: 1,
+        title: "Invertocat 2.0 Shirt",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614707113/UtkalHacks%203.0/Invertocat_2.0_Mock_GithubShop-M1_480x480_crop_center_uuabxk.jpg"
+      },
+      {
+        id: 2,
+        title: "Octocat Figurine",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614707118/UtkalHacks%203.0/Small_Octocat_480x480_crop_center_tbhv3p.png"
+      },
+      {
+        id: 3,
         title: "Subscription for each member",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
       },
       {
-        id: 2,
+        id: 4,
         title: "3 months subscription",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614693133/UtkalHacks%203.0/Nhost_tnmlnh.png"
       },
       {
-        id: 3,
+        id: 5,
         title: "1 year subscripton for the team",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
       },
@@ -253,7 +263,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "for best Hack using Matic",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/15000_pcopit.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621710/UtkalHacks%203.0/15_000_j6su23.png"
       },
       {
         id: 2,
@@ -263,7 +273,7 @@ const prizeCardData = [
       {
         id: 3,
         title: "for best Hack using Ethereum",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/10000_z2usvr.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621713/UtkalHacks%203.0/10000_kfjiam.png"
       },
 
     ]
@@ -276,7 +286,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "for best Dapp built on Tezos",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691856/UtkalHacks%203.0/20000_liovqu.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621712/UtkalHacks%203.0/20_000_lcybiw.png"
       },
       {
         id: 2,

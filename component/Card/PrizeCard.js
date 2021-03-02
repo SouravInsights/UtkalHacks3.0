@@ -54,13 +54,13 @@ const PrizeCard = ({ prizeIcon, heading, prizeImage, title, prizesData }) => {
         size="6xl"
       >
         <ModalOverlay />
-        <ModalContent width={{ md: "100px", xs: "100px" }} height={{ md: "100px", xs: "100px" }}>
+        <ModalContent w="80%">
           <ModalHeader>
             <ModalCloseButton _focus={{ boxShadow: "none" }} />
           </ModalHeader>
 
           <ModalBody >
-            <SimpleGrid gap={4} columns={["1", "2", "2", "3", "3"]} placeItems="center">
+            <SimpleGrid gap={4} columns={["1", "1", "2", "2", "3"]} placeItems="center">
               {prizesData.map((data) => (
                 <>
                   {console.log("Here's what inside prizesData:", data)}
