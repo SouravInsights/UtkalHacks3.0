@@ -35,7 +35,7 @@ const HeroSection = () => {
           color={["#ffffff", "#27333f", "#ffffff", "#ffffff", "#ffffff"]}
           mb="20px"
         >
-          5th March - 20th March
+          20th March - 4th April
         </Text>
         <DevfolioButton />
       </Stack>
