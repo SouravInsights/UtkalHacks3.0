@@ -74,7 +74,6 @@ function PresentSponsor() {
         <Box bg="#feb631" h="2px" w="100%" />
       </Stack >
       <SimpleGrid columns={["1", "1", "2", "2", "2"]} py="20px" placeItems="center">
-
       </SimpleGrid>
 
       {/* Silver Tier Start */}
@@ -107,6 +106,13 @@ function PresentSponsor() {
         <Link _focus={{ boxShadow: "none" }} href="https://matic.network/" isExternal>
           <Image
             src="https://res.cloudinary.com/emishalabs/image/upload/v1613042718/UtkalHacks%203.0/Matic-Logo_fo377i.webp"
+            w={["200px", "200px", "300px", "300px", "300px"]}
+          />
+        </Link>
+
+        <Link _focus={{ boxShadow: "none" }} href="https://github.com/" isExternal>
+          <Image
+            src="https://res.cloudinary.com/emishalabs/image/upload/v1613058549/UtkalHacks%203.0/GitHub_Logo_sour5l.png"
             w={["200px", "200px", "300px", "300px", "300px"]}
           />
         </Link>
@@ -148,11 +154,16 @@ function PresentSponsor() {
         <Box bg="#f86ca1" h="2px" w="100%" />
       </Stack>
 
-      <SimpleGrid columns={["1", "1", "3", "3", "3"]} gap={10} >
+      <SimpleGrid columns={["1", "1", "3", "3", "3"]} gap={10} placeItems="center" >
         <Link _focus={{ boxShadow: "none" }} href="https://hackon.tech/" isExternal>
           <Image w={["200px", "200px", "300px", "300px", "300px"]} src="https://res.cloudinary.com/emishalabs/image/upload/v1614073560/UtkalHacks%203.0/Hackon2.0-logo.webp" />
         </Link>
+
+        <Link _focus={{ boxShadow: "none" }} href="https://hackthemountain.tech/" isExternal>
+          <Image w={["200px", "200px", "200px", "200px", "200px"]} src="https://res.cloudinary.com/emishalabs/image/upload/v1614867163/UtkalHacks%203.0/hackthemountain_njsmpc.svg" />
+        </Link>
       </SimpleGrid>
+
     </Box>
   )
 }
