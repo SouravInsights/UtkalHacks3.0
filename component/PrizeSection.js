@@ -15,7 +15,7 @@ const prizeCardData = [
         title: "Worth Gadgets",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614710235/UtkalHacks%203.0/30000_u49uvl.png"
       },
-      {
+      /* {
         id: 2,
         title: "GraphCMS T-shirt",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
@@ -39,7 +39,7 @@ const prizeCardData = [
         id: 6,
         title: "GraphCMS Snapback",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
-      },
+      }, */
       {
         id: 7,
         title: "6 months professional plan",
@@ -67,7 +67,7 @@ const prizeCardData = [
         title: "Worth Gadgets",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614621712/UtkalHacks%203.0/20_000_lcybiw.png"
       },
-      {
+      /* {
         id: 2,
         title: "GraphCMS T-shirt",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
@@ -91,7 +91,7 @@ const prizeCardData = [
         id: 6,
         title: "GraphCMS Snapback",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
-      },
+      }, */
       {
         id: 7,
         title: "6 months professional plan",
@@ -118,7 +118,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Subscription for each member",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
       },
       {
         id: 2,
@@ -155,7 +155,7 @@ const prizeCardData = [
       {
         id: 3,
         title: "Subscription for each member",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
       },
       {
         id: 4,
@@ -177,7 +177,7 @@ const prizeCardData = [
       {
         id: 1,
         title: "Subscription for each member",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614675419/UtkalHacks%203.0/3jslogo_kkd6ww.png"
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
       },
       {
         id: 2,
@@ -225,34 +225,34 @@ const prizeCardData = [
     prizesData: [
       {
         id: 1,
-        title: "GraphCMS T-shirt",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672987/UtkalHacks%203.0/T-shirt_ha8vkm.png"
+        title: "",
+        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1615299284/UtkalHacks%203.0/Comming_Soon_naxgbf.png"
       },
-      {
-        id: 2,
-        title: "GraphCMS Tote Bag",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672990/UtkalHacks%203.0/bag_qw5m43.png"
-      },
-      {
-        id: 3,
-        title: "GraphCMS MUG",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672998/UtkalHacks%203.0/Mug_xlbryb.png"
-      },
-      {
-        id: 4,
-        title: "GraphCMS Pillow",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614673003/UtkalHacks%203.0/Pillow_xixihc.png"
-      },
-      {
-        id: 5,
-        title: "GraphCMS Snapback",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
-      },
-      {
-        id: 6,
-        title: "Collab content with GraphCMS(Stream/Post/Guide)",
-        prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
-      },
+      /*  {
+         id: 2,
+         title: "GraphCMS Tote Bag",
+         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672990/UtkalHacks%203.0/bag_qw5m43.png"
+       },
+       {
+         id: 3,
+         title: "GraphCMS MUG",
+         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672998/UtkalHacks%203.0/Mug_xlbryb.png"
+       },
+       {
+         id: 4,
+         title: "GraphCMS Pillow",
+         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614673003/UtkalHacks%203.0/Pillow_xixihc.png"
+       },
+       {
+         id: 5,
+         title: "GraphCMS Snapback",
+         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
+       },
+       {
+         id: 6,
+         title: "Collab content with GraphCMS(Stream/Post/Guide)",
+         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
+       }, */
     ]
   },
   {

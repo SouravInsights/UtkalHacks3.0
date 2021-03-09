@@ -59,7 +59,7 @@ const PrizeCard = ({ prizeIcon, heading, prizeImage, title, prizesData }) => {
             <ModalCloseButton _focus={{ boxShadow: "none" }} />
           </ModalHeader>
 
-          <ModalBody >
+          <ModalBody>
             <SimpleGrid gap={4} columns={["1", "1", "2", "2", "3"]} placeItems="center">
               {prizesData.map((data) => (
                 <>
@@ -71,6 +71,8 @@ const PrizeCard = ({ prizeIcon, heading, prizeImage, title, prizesData }) => {
                       fontSize={["xl", "xl", "2xl", "2xl", "2xl"]}
                       color="454954"
                       letterSpacing="wide"
+                      textAlign="center"
+                      w="70%"
                     >
                       {data.title}
                     </Text>
@@ -79,7 +81,9 @@ const PrizeCard = ({ prizeIcon, heading, prizeImage, title, prizesData }) => {
               ))}
             </SimpleGrid>
           </ModalBody>
-          <ModalFooter></ModalFooter>
+          <ModalFooter>
+
+          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
