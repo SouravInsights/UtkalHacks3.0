@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {
   Heading, Text, Image, VStack, Box, useDisclosure,
   Modal,
@@ -81,9 +81,8 @@ const PrizeCard = ({ prizeIcon, heading, prizeImage, title, prizesData }) => {
               ))}
             </SimpleGrid>
           </ModalBody>
-          <ModalFooter>
 
-          </ModalFooter>
+          <ModalFooter></ModalFooter>
         </ModalContent>
       </Modal>
     </>

@@ -4,7 +4,7 @@ import Section from "./Section"
 import Button from "./Button"
 import { FaPen } from 'react-icons/fa';
 
-const Newsletter = ({ heading, description, buttontext }) => {
+const Newsletter = ({ heading, description, buttontext, ref, onClick, children }) => {
     return (
         <Flex
             py="32px"
@@ -18,10 +18,13 @@ const Newsletter = ({ heading, description, buttontext }) => {
             <Section center="true" justify="center" align="center" heading={heading} description={description}>
                 <Box>
                     <Button
+                        ref={ref}
                         label={buttontext}
                         withIcon
                         rightIcon={<FaPen />}
+                        onClick={onClick}
                     />
+                    {children}
                 </Box>
             </Section>
         </Flex >
