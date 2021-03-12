@@ -1,7 +1,6 @@
 import React from "react"
-import { Heading, Box, Text, Stack, Flex, SimpleGrid } from "@chakra-ui/react"
+import { Heading, Box, Text, Stack, Flex } from "@chakra-ui/react"
 import PrizeCard from "./Card/PrizeCard"
-import Button from "./Button"
 
 
 const prizeCardData = [
@@ -41,17 +40,17 @@ const prizeCardData = [
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
       }, */
       {
-        id: 7,
+        id: 2,
         title: "6 months professional plan",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
       },
       {
-        id: 8,
+        id: 3,
         title: "1 year subscripton for the team",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
       },
       {
-        id: 9,
+        id: 4,
         title: "Subscription for each member",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
       },
@@ -93,17 +92,17 @@ const prizeCardData = [
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614672994/UtkalHacks%203.0/cap_usgbkg.png"
       }, */
       {
-        id: 7,
+        id: 2,
         title: "6 months professional plan",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Graphcmslogo_ksk6ua.png"
       },
       {
-        id: 8,
+        id: 3,
         title: "1 year subscripton for the team",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/Egghead.io_mfzmpu.png"
       },
       {
-        id: 9,
+        id: 4,
         title: "Subscription for each member",
         prizeImage: "https://res.cloudinary.com/emishalabs/image/upload/v1614691857/UtkalHacks%203.0/3jslogo_i6rqna.png"
       },
@@ -316,7 +315,7 @@ const PrizeSection = () => {
           fontSize={["xl", "xl", "2xl", "2xl"]}
           color="454954"
         >
-          No, not at all. We know hackers love prizes and swags! But sometimes
+          No, not at all. We know hackers love prizes and swags! 🤘 But sometimes
           useless prizes are a great turnoff for the people who hack out of
           passion. This year, we are focusing more on providing valuable prizes
           that are useful to everyone in the long run. And we’ve got a bunch of

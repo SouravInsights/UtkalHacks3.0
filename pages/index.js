@@ -2,8 +2,15 @@ import React from "react"
 import Head from "next/head"
 import { GraphQLClient } from "graphql-request"
 import NavBar from "../component/Navbar/Header"
-/* import { NavHeader } from "../component/Navbar/NavHeader" */
-import { Box, Image, Heading, Grid, Flex } from "@chakra-ui/react"
+import {
+  Box, Heading, Flex, Drawer,
+  useDisclosure, DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerHeader,
+  DrawerBody,
+} from "@chakra-ui/react"
+
 import HeroSection from "../component/HeroSection/HeroSection.js"
 import WikiSection from "../component/WikiSection"
 import FAQ from "../component/FAQ.js"
@@ -20,6 +27,8 @@ import PresentSponsor from "../component/PresentSponsor"
 import PastSponsor from "../component/PastSponsor"
 import SpeakerSection from "../component/SpeakerSection"
 import FAQSection from "../component/FAQ.js"
+import ContactUs from "../component/ContactForm"
+import { motion } from 'framer-motion';
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -44,7 +53,13 @@ export async function getStaticProps() {
   }
 }
 
+const DrawerCloseButtonWrapper = motion.custom(DrawerCloseButton);
+
 export default function Home({ faqs }) {
+  const firstField = React.useRef();
+  const btnRef = React.useRef();
+
+  const { isOpen, onClose, onOpen } = useDisclosure();
   return (
     <>
       <Head>
@@ -78,11 +93,43 @@ export default function Home({ faqs }) {
 
         <SprintSection />
         <BoxContainer
+          ref={btnRef}
+          onClick={onOpen}
           heading="Have an idea?"
+          buttontext="Tell your ideas"
           description="So you've got ideas? Like ... a lot of 'em?
           There are way too many of us with ideas but too little time. If you're that person then our hackers at #UtkalHacks might just build those ideas into a real product."
-          buttontext="Write us your ideas"
-        />
+        >
+
+          <Drawer
+            isOpen={isOpen}
+            placement="bottom"
+            initialFocusRef={firstField}
+            finalFocusRef={btnRef}
+            onClose={onClose}
+            preserveScrollBarGap
+          >
+            <DrawerOverlay />
+            <DrawerContent bg="white" roundedTop={[20]}>
+              <DrawerCloseButtonWrapper _focus={{ boxShadow: "none" }} borderRadius="20px" whileTap={{ scale: 1.1 }} whileHover={{ scale: 1.1 }} />
+              <DrawerHeader>
+                <Heading
+                  textAlign="center"
+                  fontWeight="extrabold"
+                  color="black"
+                  mt="20px"
+                >
+                  Tell us your ideas!
+            </Heading>
+              </DrawerHeader>
+              <DrawerBody px={["25px", "25px", "220px", "280px"]}>
+                <ContactUs />
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+
+        </BoxContainer>
+
 
         <PrizeSection />
         {/*  <Wikisection />
