@@ -7,6 +7,7 @@ import {
     FormLabel,
     Textarea,
     Button,
+    FormControl
 } from "@chakra-ui/react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -23,6 +24,7 @@ export default () => {
         email: "",
         message: "",
     });
+
     const handleServerResponse = (ok, msg) => {
         if (ok) {
             setStatus({
@@ -40,6 +42,7 @@ export default () => {
             });
         }
     };
+
     const handleOnChange = (e) => {
         e.persist();
         setInputs((prev) => ({
@@ -52,6 +55,7 @@ export default () => {
             info: { error: false, msg: null },
         });
     };
+
     const handleOnSubmit = (e) => {
         e.preventDefault();
         setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
@@ -70,54 +74,57 @@ export default () => {
                 handleServerResponse(false, error.response.data.error);
             });
     };
+
     return (
         <>
             <form onSubmit={handleOnSubmit}>
                 <Stack color="gray" spacing={["20px", "20px", "20px", "20px"]}>
-                    <Box>
+                    <FormControl id="full-name" isRequired>
                         <FormLabel htmlFor="fullname">Full name</FormLabel>
                         <Input
                             borderColor="gray"
+                            borderRadius="2px"
                             ref={firstField}
                             color="gray"
                             id="fullname"
                             placeholder="Your full name"
                         />
-                    </Box>
-                    <Box>
+                    </FormControl>
+                    <FormControl id="email" isRequired>
                         <FormLabel htmlFor="url">Email address</FormLabel>
                         <Input
+                            borderRadius="2px"
                             borderColor="gray"
                             ref={firstField}
-                            color="gray"
                             name="_replyto"
                             placeholder="Your email address"
                             onChange={handleOnChange}
                         />
-                    </Box>
-                    <Box>
-                        <FormLabel htmlFor="url">Company</FormLabel>
+                    </FormControl>
+                    <FormControl id="Company/College-name" isRequired>
+                        <FormLabel htmlFor="url">Company/College Name</FormLabel>
                         <Input
+                            borderRadius="2px"
                             borderColor="gray"
                             ref={firstField}
-                            color="gray"
-                            placeholder="Company name"
+                            placeholder="Your college or company name"
                             onChange={handleOnChange}
                         />
-                    </Box>
-                    <Box>
-                        <FormLabel htmlFor="desc">What's your idea?</FormLabel>
+                    </FormControl>
+                    <FormControl id="idea" isRequired>
+                        <FormLabel htmlFor="idea">What's the pain/problem ?</FormLabel>
                         <Textarea
-                            id="desc"
-                            color="gray"
+                            id="idea"
+                            borderRadius="2px"
                             borderColor="gray"
                             onChange={handleOnChange}
-                            placeholder="let us know what you would like to discuss"
+                            placeholder="Briefly talk about the idea"
                         />
-                    </Box>
+                    </FormControl>
                 </Stack>
                 <Button
                     my={["20px", "20px", "30px", "30px"]}
+                    borderRadius="2px"
                     bg="black"
                     color="white"
                     fontWeight="bold"

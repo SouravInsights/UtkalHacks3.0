@@ -28,6 +28,7 @@ import PastSponsor from "../component/PastSponsor"
 import SpeakerSection from "../component/SpeakerSection"
 import FAQSection from "../component/FAQ.js"
 import ContactUs from "../component/ContactForm"
+import { motion } from 'framer-motion';
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -51,6 +52,8 @@ export async function getStaticProps() {
     revalidate: 1,
   }
 }
+
+const DrawerCloseButtonWrapper = motion.custom(DrawerCloseButton);
 
 export default function Home({ faqs }) {
   const firstField = React.useRef();
@@ -108,7 +111,7 @@ export default function Home({ faqs }) {
           >
             <DrawerOverlay />
             <DrawerContent bg="white" roundedTop={[20]}>
-              <DrawerCloseButton />
+              <DrawerCloseButtonWrapper _focus={{ boxShadow: "none" }} borderRadius="20px" whileTap={{ scale: 1.1 }} whileHover={{ scale: 1.1 }} />
               <DrawerHeader>
                 <Heading
                   textAlign="center"

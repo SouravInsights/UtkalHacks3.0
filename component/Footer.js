@@ -20,7 +20,7 @@ const Footer = () => {
         letterSpacing="wide"
         textAlign="center"
       >
-        You never know what you could possibly build at Hackathons.
+        You never know what you could possibly build at Hackathons 💡.
       </Text>
       <Text
         fontSize={["2xl", "2xl", "3xl", "4xl", "4xl"]}
